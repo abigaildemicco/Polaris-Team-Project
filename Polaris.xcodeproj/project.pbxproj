@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */; };
 		518A1452274270B6009D1850 /* PolarisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1451274270B6009D1850 /* PolarisApp.swift */; };
 		518A1454274270B6009D1850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1453274270B6009D1850 /* ContentView.swift */; };
 		518A1456274270B8009D1850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518A1455274270B8009D1850 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRecordings.swift; sourceTree = "<group>"; };
 		518A144E274270B6009D1850 /* Polaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A1451274270B6009D1850 /* PolarisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisApp.swift; sourceTree = "<group>"; };
 		518A1453274270B6009D1850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				518A1451274270B6009D1850 /* PolarisApp.swift */,
+				40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */,
 				518A1453274270B6009D1850 /* ContentView.swift */,
 				F7F04BB22743C49900C99E7C /* TodayPage.swift */,
 				518A1455274270B8009D1850 /* Assets.xcassets */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				518A1454274270B6009D1850 /* ContentView.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayPage.swift in Sources */,
