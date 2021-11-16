@@ -14,6 +14,7 @@
 		518A1463274270B8009D1850 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1462274270B8009D1850 /* PolarisTests.swift */; };
 		518A146D274270B8009D1850 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146C274270B8009D1850 /* PolarisUITests.swift */; };
 		518A146F274270B8009D1850 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */; };
+		F7F04BB32743C49900C99E7C /* TodayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04BB22743C49900C99E7C /* TodayPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		518A1468274270B8009D1850 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A146C274270B8009D1850 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7F04BB22743C49900C99E7C /* TodayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				518A1451274270B6009D1850 /* PolarisApp.swift */,
 				518A1453274270B6009D1850 /* ContentView.swift */,
+				F7F04BB22743C49900C99E7C /* TodayPage.swift */,
 				518A1455274270B8009D1850 /* Assets.xcassets */,
 				518A1457274270B8009D1850 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				518A1454274270B6009D1850 /* ContentView.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
+				F7F04BB32743C49900C99E7C /* TodayPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
