@@ -20,8 +20,53 @@ struct TodayPage: View {
  
         TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
        ScrollView {
-           VStack{
-               //Text(date)
+           VStack(spacing: 50.0){
+               
+               ZStack{
+                   RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                       .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
+                       .brightness(0.5)
+                       .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                   
+                   HStack (spacing: 10.0){
+                       
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                           Text("😢")
+                       }
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                           Text("🙁")
+                       }
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                           Text("😐")
+                       }
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                           Text("☺️")
+                       }
+                       Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                           Text("😁")
+                       }
+                       
+                   }
+                   
+               }.padding(.top)
+               
+               
+               ZStack{
+                   RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                       .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
+                       .brightness(0.5)
+                       .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                   
+               }
+              
+               ZStack{
+                   RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                       .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
+                       .brightness(0.5)
+                       .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                   
+               }
+               
  
            }
        }.tabItem {  Image(systemName: "doc.text.image")
