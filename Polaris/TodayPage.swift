@@ -14,7 +14,7 @@ struct TodayPage: View {
     
     @State private var hideStatusBar = false
     @State var date="15 November 2021"
-    
+    let emojiSize = 20.0
     
     var body: some View {
  
@@ -31,7 +31,7 @@ struct TodayPage: View {
                    HStack (spacing: 10.0){
                        
                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                           Text("😢")
+                           Text("😢").font(.system(size: emojiSize))
                        }
                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                            Text("🙁")
