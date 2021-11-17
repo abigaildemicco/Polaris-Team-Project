@@ -20,30 +20,37 @@ struct ContentView: View {
     }()
     
     var body: some View{
-        HStack {
             NavigationView {
                 
-                VStack{
-                    
-                    
-                    
+                VStack{ //metto in fila i tre rettangoli
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
                     
-                    
-                    
-                    
+                    ZStack {
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
-                        .brightness(0.5)
-                        .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                    .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
+                            .brightness(0.5)
+                            .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                        VStack{
+                            Text ("Family")
+                        }
+                        VStack {
+                            Text ("University")
+                        }
+                        VStack {
+                            Text ("Friends")
+                        }
+                   
+                    } //zstack
+                    
                     ZStack(alignment: .center) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                             .brightness(0.5)
                             .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                        
                         DatePicker(
                             "Start Date",
                             selection: $date,
@@ -52,11 +59,10 @@ struct ContentView: View {
                         )
                             .frame(width: UIScreen.main.bounds.width - 32, height: 150)
                     } //zstack
-                }//vstack
+                } //vstack
                 .navigationTitle("Feelings Calendar")
             }
-        } //navigationview
-    }//view
+    } //view
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
