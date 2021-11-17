@@ -34,8 +34,8 @@ struct TodayPage: View {
                 
                 HStack (spacing: 5.0){
                     
-              visualButton()
-          
+                    visualButtonEmoji()
+                    
                 }
                 
             }.padding(.top)
@@ -51,46 +51,50 @@ struct TodayPage: View {
                     
                     HStack(spacing: 2.0){
                         
-                        ForEach(Reasons){ Reason in
-                            
-                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                                Text(Reason.name)
-                                    .font(.system(size: reasonsSize, weight: .heavy, design: .rounded))
-                                    .padding(.all)
-                                    .foregroundColor(.white)
-                                    .background(Color.blue)
-                                    .cornerRadius(reasonsRadious)
-                                    .frame(width: 110, height: 50 ,alignment: .center )
-                                    .scaledToFit()
-                            }.foregroundColor(.white)
-                        }
+                        visualButtonReasons()
                         
                     }
-                        
                 }
             }
-            
-            ZStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
-                    .brightness(0.65)
-                    .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                ZStack{
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
+                        .brightness(0.65)
+                        .frame(width: UIScreen.main.bounds.width - 32, height: 150)
+                    
+                }
                 
-            }
-            
-            
-        }.navigationTitle(date)
-    }
+                
+            }.navigationTitle(date)
+        }
+        
+        
     
     
-    private func visualButton() -> some View{
+    private func visualButtonEmoji() -> some View{
         ForEach(Emojis){ Emoji in
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Text(Emoji.name).font(.system(size: Emoji.emojiSize))
             }
         }
     }
-    // }
+    
+    private func visualButtonReasons() -> some View{
+        ForEach(Reasons) { Reason in
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text(Reason.name).font(.system(size: 20.0))
+                    .padding(.all)
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .cornerRadius(20)
+                    .frame(width: 150, height: 50 ,alignment: .center )
+                    .scaledToFit()
+                    
+            }
+            
+        }
+    }
+    
 }
 
 

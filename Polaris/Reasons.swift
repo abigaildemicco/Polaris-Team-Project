@@ -1,10 +1,9 @@
 //
-//  Reasons.swift
+//  Reasons2.swift
 //  Polaris
 //
-//  Created by Antonio Iacono on 16/11/21.
+//  Created by Antonio Iacono on 17/11/21.
 //
-
 
 import Foundation
 import SwiftUI
