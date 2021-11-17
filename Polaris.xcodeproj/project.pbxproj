@@ -15,6 +15,8 @@
 		518A1463274270B8009D1850 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1462274270B8009D1850 /* PolarisTests.swift */; };
 		518A146D274270B8009D1850 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146C274270B8009D1850 /* PolarisUITests.swift */; };
 		518A146F274270B8009D1850 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */; };
+		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
+		F73A65BC274408B700D40684 /* Reasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65BB274408B700D40684 /* Reasons.swift */; };
 		F7F04BB32743C49900C99E7C /* TodayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04BB22743C49900C99E7C /* TodayPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		518A1468274270B8009D1850 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A146C274270B8009D1850 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		F73A65BB274408B700D40684 /* Reasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reasons.swift; sourceTree = "<group>"; };
 		F7F04BB22743C49900C99E7C /* TodayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,8 @@
 				40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */,
 				518A1453274270B6009D1850 /* Feelings Calendar.swift */,
 				F7F04BB22743C49900C99E7C /* TodayPage.swift */,
+				F73A65B92743F9C700D40684 /* Emoji.swift */,
+				F73A65BB274408B700D40684 /* Reasons.swift */,
 				518A1455274270B8009D1850 /* Assets.xcassets */,
 				518A1457274270B8009D1850 /* Preview Content */,
 			);
@@ -266,6 +272,7 @@
 				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				518A1454274270B6009D1850 /* Feelings Calendar.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
+				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
