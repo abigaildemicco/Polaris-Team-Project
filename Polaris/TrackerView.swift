@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TrackerView: View {
     
     @State private var date = Date()
     let emojiSize = 25.0
@@ -24,31 +24,23 @@ struct ContentView: View {
         NavigationView {
             
             VStack{ //metto in fila i tre rettangoli
+                
                 ZStack{
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
                     
-                    HStack (spacing: 10.0){
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("😢").font(.system(size: emojiSize))
+                    VStack {
+                    Text ("Mood")
+
+                    HStack (spacing: 5.0){
+                        ForEach(Emojis){ Emoji in
+                            
+                            Text(Emoji.name).font(.system(size: Emoji.emojiSize))
                         }
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("🙁").font(.system(size: emojiSize))
-                        }
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("😐").font(.system(size: emojiSize))
-                        }
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("☺️").font(.system(size: emojiSize))
-                        }
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("😁").font(.system(size: emojiSize))
-                        }
-                        
-                    } //hstack per le emoji
+                    } //hstack
+                    } //vstack
                 } //zstack primo rettangolo
                 
                 ZStack {
@@ -56,15 +48,24 @@ struct ContentView: View {
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
-                    VStack{
-                        Text ("Family")
-                    }
-                    VStack {
-                        Text ("University")
-                    }
-                    VStack {
-                        Text ("Friends")
-                    }
+                    VStack (spacing: 10.0){
+                        Text ("Reasons")
+                        HStack {
+                            Text ("Family")
+                            ProgressView(value: 0.7)
+                                .frame(width: 220.0)
+                        }
+                        HStack {
+                            Text ("University")
+                            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                                .frame(width: 220.0)
+                        }
+                        HStack{
+                            Text ("Friends")
+                            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                                .frame(width: 220.0)
+                        }
+                    } .padding(.leading, 30.0)
                 } //zstack secondo rettangolo
                 
                 ZStack(alignment: .center) {
@@ -83,12 +84,12 @@ struct ContentView: View {
                 } //zstack terzo rettangolo
             } //vstack tutti i rettangoli
             .navigationTitle("Feelings Calendar")
-        }
-    } //view
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+        } //navigationview
+    } //body
+}//contentview
+struct TrackerView_Previews: PreviewProvider {
+    static var previews: some View {
+        TrackerView()
     }
-} //contentview
+}
+
