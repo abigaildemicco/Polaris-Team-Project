@@ -25,11 +25,11 @@ struct ContentView: View {
 //                        Text("Today")
 //                    }
 //
-//                RecordsView()
-//                    .tabItem {
-//                        Image(systemName: "heart.square.fill")
-//                        Text("Records")
-//                    }
+                FavoritesView()
+                    .tabItem {
+                        Image(systemName: "heart.square.fill")
+                        Text("Records")
+                    }
 //
 //                HelpView()
 //                    .tabItem {
