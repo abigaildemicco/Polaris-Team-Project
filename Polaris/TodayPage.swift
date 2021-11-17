@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-
+/*
 
 struct TodayPage: View {
     
@@ -94,9 +94,12 @@ struct TodayPage: View {
 }
 
 
-
+/*
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{ TodayPage()}
     }
 }
+*/
+
+*/

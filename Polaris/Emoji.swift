@@ -19,11 +19,11 @@ struct Emoji : Identifiable{
 
 
 var Emojis : [Emoji] = [
-    Emoji (name: "1",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "2",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "3",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "4",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "5",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😥",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "🙁",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😐",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "☺️",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😄",emojiSize: 50.0,buttonColour: .blue),
 
 ]
 
