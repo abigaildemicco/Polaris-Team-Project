@@ -56,15 +56,24 @@ struct ContentView: View {
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
-                    VStack{
+                    VStack (spacing: 10.0){
+                        HStack {
                         Text ("Family")
-                    }
-                    VStack {
+                            ProgressView(value: 0.7)
+                                .frame(width: 220.0)
+                        }
+                        HStack {
                         Text ("University")
-                    }
-                    VStack {
+                        ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                                .frame(width: 220.0)
+                        }
+                        HStack{
                         Text ("Friends")
-                    }
+                        ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                                .frame(width: 220.0)
+                        }
+                        
+                    } .padding(.leading, 30.0)
                 } //zstack secondo rettangolo
                 
                 ZStack(alignment: .center) {
@@ -92,3 +101,4 @@ struct ContentView: View {
         }
     }
 } //contentview
+
