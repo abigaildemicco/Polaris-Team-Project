@@ -18,24 +18,24 @@ struct ContentView: View {
                         Image(systemName: "calendar")
                         Text("Track")
                     }
-//
-//                TodayView()
-//                    .tabItem {
-//                        Image(systemName: "doc.text.image")
-//                        Text("Today")
-//                    }
-//
+
+                TodayView()
+                    .tabItem {
+                        Image(systemName: "doc.text.image")
+                        Text("Today")
+                    }
+
                 FavoritesView()
                     .tabItem {
                         Image(systemName: "heart.square.fill")
                         Text("Records")
                     }
-//
-//                HelpView()
-//                    .tabItem {
-//                        Image(systemName: "questionmark.circle")
-//                        Text("Help")
-//                    }
+
+                HelpView()
+                    .tabItem {
+                        Image(systemName: "questionmark.circle")
+                        Text("Help")
+                    }
 //            }
 //            .accentColor(.red)
         }
@@ -44,6 +44,7 @@ struct ContentView: View {
     }
 }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
