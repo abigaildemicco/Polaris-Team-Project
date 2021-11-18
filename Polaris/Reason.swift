@@ -5,7 +5,7 @@
 //  Created by Antonio Iacono on 16/11/21.
 //
 
-import Foundation
+
 import Foundation
 import SwiftUI
 
@@ -19,6 +19,7 @@ struct Reason : Identifiable{
 
 
 var Reasons : [Reason] = [
+    
     Reason (name: "University"),
     Reason (name: "Diet"),
     Reason (name: "Family"),

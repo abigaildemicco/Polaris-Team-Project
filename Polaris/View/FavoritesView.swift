@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct FavRec: View {
+
+struct FavoritesView: View {
     @State var searchText = ""
     @State var searching = false
     
-    let myRecordings = [
-        "Dio", "Maronn", "Ciao"
+   
+    
+    @State var myRecordings = [
+        "Maronn", "Dio", "Ciao", "Gesù", "Gesuel", "Paskd"
     ]
     
 
@@ -21,15 +24,38 @@ struct FavRec: View {
             VStack(alignment: .leading) {
              SearchBar(searchText: $searchText, searching: $searching)
                 List {
+                    
                     ForEach(myRecordings.filter({ (record1: String) -> Bool in
                         return record1.hasPrefix(searchText) || searchText == ""
                     }), id: \.self) { record1 in
                         Text(record1)
                     }
+                    
+                    .onDelete(perform: {IndexSet in
+                        
+                    myRecordings.remove(atOffsets: IndexSet)
+                    })
+                    .onMove(perform: { indices, newOffset in myRecordings.move(fromOffsets: indices, toOffset: newOffset)
+                   
+                    })
+                  
                 }
-                    .listStyle(GroupedListStyle())
-                    .navigationTitle(searching ? "Searching" : "My Feelings")
-                    .toolbar {
+//                .padding()
+               
+                .navigationBarItems(leading: EditButton()
+                .foregroundColor(.orange))
+               
+                
+                
+
+               .listStyle(GroupedListStyle())
+              .navigationTitle(searching ? "Searching" : "My Feelings")
+             .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing){ Image(systemName: "plus")
+//              .foregroundColor(.red)
+                  
+//                        ToolbarItemGroup(placement: .navigationBarTrailing){
+//                            EditButton()
                         if searching {
                             Button("Cancel") {
                                 searchText = ""
@@ -37,9 +63,11 @@ struct FavRec: View {
                                    searching = false
                                    UIApplication.shared.dismissKeyboard()
                                 }
-                            }
+                            }.foregroundColor(.orange)
+                            
                         }
                     }
+                    
                     .gesture(DragGesture()
                                 .onChanged({ _ in
                         UIApplication.shared.dismissKeyboard()
@@ -47,12 +75,13 @@ struct FavRec: View {
                     )
             }
         }
+       
     }
 }
 
-struct FavRec_Previews: PreviewProvider {
+struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FavoritesView()
     }
 }
 struct SearchBar: View {
@@ -86,11 +115,13 @@ struct SearchBar: View {
             .cornerRadius(13)
             .padding()
     }
+  
+    }
 
-}
 
-extension UIApplication {
-     func dismissKeyboard() {
-         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    extension UIApplication {
+    func dismissKeyboard() {
+    sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
      }
 }
+
