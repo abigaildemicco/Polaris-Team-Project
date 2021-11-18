@@ -10,9 +10,9 @@ import SwiftUI
 struct ReasonSelectionView: View {
     
     private var items: [GridItem] = [
-        GridItem(.adaptive(minimum: 80, maximum: 140), spacing: 14),
-        GridItem(.adaptive(minimum: 80, maximum: 140), spacing: 14),
-        GridItem(.adaptive(minimum: 80, maximum: 140), spacing: 14)
+        GridItem(.fixed(120), spacing: 14),
+        GridItem(.fixed(120), spacing: 14),
+        GridItem(.fixed(120), spacing: 14)
     ]
     
     var body: some View {
@@ -34,14 +34,16 @@ struct ReasonSelectionView: View {
                                 Text(Reason.name)
                                     .font(.system(size: 16, weight: .heavy, design: .rounded))
                                     .foregroundColor(.white)
-                                //.background(Color.blue)
-                                    .scaledToFill()
+                                    .font(.headline)
+                                    .frame(width:100 ,height: 50)
                                     .background(Color.blue)
+                                    .cornerRadius(20)
+
                                 
                             }
-                            .frame(width:100 ,height: 50)
-                            .background(Color.blue)
-                            .cornerRadius(20)
+                            
+                           // .background(Color.blue)
+                            
                             
                         }
                     }.padding(.leading)

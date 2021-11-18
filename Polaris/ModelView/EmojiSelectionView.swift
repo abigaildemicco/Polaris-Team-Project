@@ -18,6 +18,7 @@ struct EmojiSelectionView: View {
             
             VStack{
                 Text("How do you feel?").font(.system(size: 24, weight: .heavy, design: .rounded))
+                    
                 
                 
                 HStack{
