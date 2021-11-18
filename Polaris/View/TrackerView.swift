@@ -11,11 +11,11 @@ struct TrackerView: View {
     var StartDay = 1
     var StartMonth = 11
     var StartYear = 2021
-    
+
     var EndDay = 7
     var EndMonth =  11
     var EndYear = 2021
-    
+
     @State private var date = Date()
     let emojiSize = 25.0
     let dateRange: ClosedRange<Date> = {
@@ -26,30 +26,30 @@ struct TrackerView: View {
         ...
         calendar.date(from:endComponents)!
     }()
-    
+
     var body: some View{
         NavigationView {
-            
+
             VStack{ //metto in fila i tre rettangoli
-                
+
                 ZStack{
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
-                    
+
                     VStack {
                     Text ("Mood")
 
                     HStack (spacing: 5.0){
                         ForEach(Emojis){ Emoji in
-                            
+
                             Text(Emoji.name).font(.system(size: Emoji.emojiSize))
                         }
                     } //hstack
                     } //vstack
                 } //zstack primo rettangolo
-                
+
                 ZStack {
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
@@ -74,13 +74,13 @@ struct TrackerView: View {
                         }
                     } .padding(.leading, 30.0)
                 } //zstack secondo rettangolo
-                
+
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.init(red: 0.2, green: 0.2, blue: 0.2))
                         .brightness(0.5)
                         .frame(width: UIScreen.main.bounds.width - 32, height: 150)
-                    
+
                     DatePicker(
                         "Start Date",
                         selection: $date,

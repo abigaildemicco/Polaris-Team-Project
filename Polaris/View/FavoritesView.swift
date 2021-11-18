@@ -84,6 +84,7 @@ struct FavoritesView_Previews: PreviewProvider {
         FavoritesView()
     }
 }
+
 struct SearchBar: View {
     
     @Binding var searchText: String
