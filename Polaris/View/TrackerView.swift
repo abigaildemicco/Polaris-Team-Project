@@ -4,7 +4,7 @@
 //
 //  Created by Abigail De Micco on 15/11/21.
 //
-
+/*
 import SwiftUI
 
 struct TrackerView: View {
@@ -100,3 +100,4 @@ struct TrackerView_Previews: PreviewProvider {
     }
 }
 
+*/

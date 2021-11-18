@@ -11,7 +11,8 @@ import SwiftUI
 struct PolarisApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            //SplashView()
+            TodayView()
         }
     }
 }
