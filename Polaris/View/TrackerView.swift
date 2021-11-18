@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct TrackerView: View {
+    var StartDay = 1
+    var StartMonth = 11
+    var StartYear = 2021
+    
+    var EndDay = 7
+    var EndMonth =  11
+    var EndYear = 2021
     
     @State private var date = Date()
     let emojiSize = 25.0
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current
-        let startComponents = DateComponents(year: 2020, month: 1, day: 1)
-        let endComponents = DateComponents(year: 2021, month: 12, day: 31, hour: 23, minute: 59, second: 59)
+        let startComponents = DateComponents(year: StartYear, month: StartMonth, day: StartYear)
+        let endComponents = DateComponents(year: EndYear, month: EndMonth, day: EndDay, hour: 23, minute: 59, second: 59)
         return calendar.date(from:startComponents)!
         ...
         calendar.date(from:endComponents)!

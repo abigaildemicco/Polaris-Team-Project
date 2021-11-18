@@ -17,6 +17,8 @@
 		518A1463274270B8009D1850 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1462274270B8009D1850 /* PolarisTests.swift */; };
 		518A146D274270B8009D1850 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146C274270B8009D1850 /* PolarisUITests.swift */; };
 		518A146F274270B8009D1850 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */; };
+		EFA2ECFD27465B0B0031583F /* ReasonsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ECFC27465B0B0031583F /* ReasonsData.swift */; };
+		EFA2ED0027465B580031583F /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ECFF27465B580031583F /* EmojiData.swift */; };
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
 		F772C983274541BB00B2E3CA /* Reasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F772C9812745227D00B2E3CA /* Reasons.swift */; };
 		F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04BB22743C49900C99E7C /* TodayView.swift */; };
@@ -53,6 +55,8 @@
 		518A1468274270B8009D1850 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A146C274270B8009D1850 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFA2ECFC27465B0B0031583F /* ReasonsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsData.swift; sourceTree = "<group>"; };
+		EFA2ECFF27465B580031583F /* EmojiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiData.swift; sourceTree = "<group>"; };
 		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		F772C9812745227D00B2E3CA /* Reasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reasons.swift; sourceTree = "<group>"; };
 		F7F04BB22743C49900C99E7C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
@@ -106,9 +110,10 @@
 		518A1450274270B6009D1850 /* Polaris */ = {
 			isa = PBXGroup;
 			children = (
-				518A1451274270B6009D1850 /* PolarisApp.swift */,
-				F7777052274558AC005DE740 /* View */,
 				F772C984274541F900B2E3CA /* Model */,
+				EFA2ECFE27465B120031583F /* Data */,
+				F7777052274558AC005DE740 /* View */,
+				518A1451274270B6009D1850 /* PolarisApp.swift */,
 				518A1455274270B8009D1850 /* Assets.xcassets */,
 				518A1457274270B8009D1850 /* Preview Content */,
 			);
@@ -138,6 +143,15 @@
 				518A146E274270B8009D1850 /* PolarisUITestsLaunchTests.swift */,
 			);
 			path = PolarisUITests;
+			sourceTree = "<group>";
+		};
+		EFA2ECFE27465B120031583F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EFA2ECFC27465B0B0031583F /* ReasonsData.swift */,
+				EFA2ECFF27465B580031583F /* EmojiData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		F772C984274541F900B2E3CA /* Model */ = {
@@ -293,11 +307,13 @@
 			files = (
 				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
+				EFA2ED0027465B580031583F /* EmojiData.swift in Sources */,
 				5119CA1B274519C50012AD00 /* ContentView.swift in Sources */,
 				F772C983274541BB00B2E3CA /* Reasons.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
 				40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */,
 				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,
+				EFA2ECFD27465B0B0031583F /* ReasonsData.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
