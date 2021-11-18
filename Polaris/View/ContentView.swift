@@ -13,12 +13,12 @@ struct ContentView: View {
         
         ZStack {
             TabView {
-                TrackerView()
+              /*  TrackerView()
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("Track")
                     }
-
+               */
                 TodayView()
                     .tabItem {
                         Image(systemName: "doc.text.image")

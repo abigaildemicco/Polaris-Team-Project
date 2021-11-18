@@ -27,6 +27,8 @@ var Emojis : [Emoji] = [
 
 ]
 
+ 
+ 
 /*
 
 var emoji1 = Emoji (emoji: "😢",emojiSize: 50.0,buttonColour: .blue)
