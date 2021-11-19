@@ -13,6 +13,7 @@ struct ContentView: View {
         
         ZStack {
             TabView {
+                
                 TrackerView()
                     .tabItem {
                         Image(systemName: "calendar")

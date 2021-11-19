@@ -17,14 +17,14 @@ struct InformationsView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 Spacer()
-                Text(helper1.helperName)
+                Text(helper.helperName)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.bottom)
-                Text(helper1.helperSubtitle)
+                Text(helper.helperSubtitle)
                     .fontWeight(.bold)
                 
-                Text("\(helper1.helperDescription)\n\(helper1.helperAdress)\nEmail: \(helper1.helperMail)\nNumber: \(helper1.helperNumber)")
+                Text("\(helper.helperDescription)\n\(helper.helperAdress)\nEmail: \(helper.helperMail)\nNumber: \(helper.helperNumber)")
                     .multilineTextAlignment(.leading)
                     .padding(.bottom)
                 Spacer()
