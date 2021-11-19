@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */; };
 		40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DBDE112745244C00BE2938 /* FavoritesView.swift */; };
+		5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EA2747A02F006B0B55 /* MoodView.swift */; };
+		5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EC2747A112006B0B55 /* ReasonsView.swift */; };
 		5119CA1B274519C50012AD00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119CA1A274519C50012AD00 /* ContentView.swift */; };
 		518A1452274270B6009D1850 /* PolarisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1451274270B6009D1850 /* PolarisApp.swift */; };
 		518A1454274270B6009D1850 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1453274270B6009D1850 /* TrackerView.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRecordings.swift; sourceTree = "<group>"; };
 		40DBDE112745244C00BE2938 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		5111C3EA2747A02F006B0B55 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		5111C3EC2747A112006B0B55 /* ReasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsView.swift; sourceTree = "<group>"; };
 		5119CA1A274519C50012AD00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		518A144E274270B6009D1850 /* Polaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A1451274270B6009D1850 /* PolarisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisApp.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			children = (
 				F71B5A312746676700648A51 /* EmojiSelectionView.swift */,
 				F71B5A33274667A900648A51 /* ReasonSelectionView.swift */,
+				5111C3EA2747A02F006B0B55 /* MoodView.swift */,
+				5111C3EC2747A112006B0B55 /* ReasonsView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -339,9 +345,11 @@
 			files = (
 				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
+				5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */,
 				EFA2ED0027465B580031583F /* EmojiData.swift in Sources */,
 				EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */,
 				5119CA1B274519C50012AD00 /* ContentView.swift in Sources */,
+				5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */,
 				EFA2ED0227465D8E0031583F /* HelperData.swift in Sources */,
 				EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */,
 				F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */,
