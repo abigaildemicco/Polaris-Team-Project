@@ -12,6 +12,7 @@ struct PolarisApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+           // ThoughtView()
         }
     }
 }

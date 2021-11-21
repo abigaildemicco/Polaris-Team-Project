@@ -30,7 +30,9 @@
 		F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A312746676700648A51 /* EmojiSelectionView.swift */; };
 		F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A33274667A900648A51 /* ReasonSelectionView.swift */; };
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
+		F749151327490421008C1C5E /* ThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749151227490421008C1C5E /* ThoughtView.swift */; };
 		F772C983274541BB00B2E3CA /* Reasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F772C9812745227D00B2E3CA /* Reasons.swift */; };
+		F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA256527490BAC00460B63 /* Thoughts.swift */; };
 		F7C03FD027481B1A008078C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FCF27481B1A008078C8 /* Task.swift */; };
 		F7C03FD227481B40008078C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD127481B40008078C8 /* DataValue.swift */; };
 		F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD327481B65008078C8 /* CalendarView.swift */; };
@@ -83,7 +85,9 @@
 		F71B5A312746676700648A51 /* EmojiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSelectionView.swift; sourceTree = "<group>"; };
 		F71B5A33274667A900648A51 /* ReasonSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonSelectionView.swift; sourceTree = "<group>"; };
 		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		F749151227490421008C1C5E /* ThoughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtView.swift; sourceTree = "<group>"; };
 		F772C9812745227D00B2E3CA /* Reasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reasons.swift; sourceTree = "<group>"; };
+		F7BA256527490BAC00460B63 /* Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoughts.swift; sourceTree = "<group>"; };
 		F7C03FCF27481B1A008078C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F7C03FD127481B40008078C8 /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
 		F7C03FD327481B65008078C8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				F71B5A312746676700648A51 /* EmojiSelectionView.swift */,
 				5111C3EA2747A02F006B0B55 /* MoodView.swift */,
 				5111C3EC2747A112006B0B55 /* ReasonsView.swift */,
+				F749151227490421008C1C5E /* ThoughtView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			children = (
 				F772C9812745227D00B2E3CA /* Reasons.swift */,
 				F73A65B92743F9C700D40684 /* Emoji.swift */,
+				F7BA256527490BAC00460B63 /* Thoughts.swift */,
 				EFA2ED0327465DC30031583F /* HelperModel.swift */,
 			);
 			path = Model;
@@ -213,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				EFA2ED0527465DF00031583F /* SplashView.swift */,
+				F7C03FD327481B65008078C8 /* CalendarView.swift */,
 				5119CA1A274519C50012AD00 /* ContentView.swift */,
 				518A1453274270B6009D1850 /* TrackerView.swift */,
 				F7F04BB22743C49900C99E7C /* TodayView.swift */,
@@ -228,7 +235,6 @@
 		F7C03FCD27481AD7008078C8 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
-				F7C03FD327481B65008078C8 /* CalendarView.swift */,
 				F7C03FD527481B86008078C8 /* CustomDataPicker.swift */,
 				F7C03FD727481BA4008078C8 /* ModalView.swift */,
 			);
@@ -382,6 +388,7 @@
 				EFA2ED0027465B580031583F /* EmojiData.swift in Sources */,
 				EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */,
 				5119CA1B274519C50012AD00 /* ContentView.swift in Sources */,
+				F749151327490421008C1C5E /* ThoughtView.swift in Sources */,
 				5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */,
 				EFA2ED0227465D8E0031583F /* HelperData.swift in Sources */,
 				EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */,
@@ -390,6 +397,7 @@
 				F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */,
 				F772C983274541BB00B2E3CA /* Reasons.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
+				F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */,
 				40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */,
 				EFA2ED0627465DF00031583F /* SplashView.swift in Sources */,
 				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,

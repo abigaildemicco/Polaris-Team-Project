@@ -5,6 +5,7 @@
 //  Created by Antonio Iacono on 18/11/21.
 //
 
+
 import SwiftUI
 
 struct ReasonSelectionView: View {
@@ -41,10 +42,7 @@ struct ReasonSelectionView: View {
                             
                             
                         }
-                        
-                        
-                        
-                        
+                    
                     }
                 }
                 
