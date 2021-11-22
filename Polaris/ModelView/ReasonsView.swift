@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReasonsView: View {
     var body: some View {
-        ZStack {
+        
             VStack (spacing: 10.0){
                 Text ("Reasons").bold()
                 HStack {
@@ -27,11 +27,11 @@ struct ReasonsView: View {
                     ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
                         .frame(width: 220.0)
                 }
-            }  .padding()
+            }   .padding()
                 .background(Color.gray)
                 .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                 .padding()
-        }
+        
     }
 }
 

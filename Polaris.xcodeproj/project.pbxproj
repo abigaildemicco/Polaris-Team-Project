@@ -12,6 +12,8 @@
 		5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EA2747A02F006B0B55 /* MoodView.swift */; };
 		5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EC2747A112006B0B55 /* ReasonsView.swift */; };
 		5119CA1B274519C50012AD00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119CA1A274519C50012AD00 /* ContentView.swift */; };
+		512447C0274AE641003DF3BB /* PolarisDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 512447BE274AE641003DF3BB /* PolarisDB.xcdatamodeld */; };
+		512447C2274AE71C003DF3BB /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512447C1274AE71C003DF3BB /* CoreDataController.swift */; };
 		518A1452274270B6009D1850 /* PolarisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1451274270B6009D1850 /* PolarisApp.swift */; };
 		518A1454274270B6009D1850 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A1453274270B6009D1850 /* TrackerView.swift */; };
 		518A1456274270B8009D1850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518A1455274270B8009D1850 /* Assets.xcassets */; };
@@ -30,7 +32,14 @@
 		F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A312746676700648A51 /* EmojiSelectionView.swift */; };
 		F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A33274667A900648A51 /* ReasonSelectionView.swift */; };
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
+		F749151327490421008C1C5E /* ThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749151227490421008C1C5E /* ThoughtView.swift */; };
 		F772C983274541BB00B2E3CA /* Reasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F772C9812745227D00B2E3CA /* Reasons.swift */; };
+		F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA256527490BAC00460B63 /* Thoughts.swift */; };
+		F7C03FD027481B1A008078C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FCF27481B1A008078C8 /* Task.swift */; };
+		F7C03FD227481B40008078C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD127481B40008078C8 /* DataValue.swift */; };
+		F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD327481B65008078C8 /* CalendarView.swift */; };
+		F7C03FD627481B86008078C8 /* CustomDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD527481B86008078C8 /* CustomDataPicker.swift */; };
+		F7C03FD827481BA4008078C8 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD727481BA4008078C8 /* ModalView.swift */; };
 		F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04BB22743C49900C99E7C /* TodayView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +66,8 @@
 		5111C3EA2747A02F006B0B55 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		5111C3EC2747A112006B0B55 /* ReasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsView.swift; sourceTree = "<group>"; };
 		5119CA1A274519C50012AD00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		512447BF274AE641003DF3BB /* PolarisDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PolarisDB.xcdatamodel; sourceTree = "<group>"; };
+		512447C1274AE71C003DF3BB /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		518A144E274270B6009D1850 /* Polaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518A1451274270B6009D1850 /* PolarisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisApp.swift; sourceTree = "<group>"; };
 		518A1453274270B6009D1850 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
@@ -78,7 +89,14 @@
 		F71B5A312746676700648A51 /* EmojiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSelectionView.swift; sourceTree = "<group>"; };
 		F71B5A33274667A900648A51 /* ReasonSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonSelectionView.swift; sourceTree = "<group>"; };
 		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		F749151227490421008C1C5E /* ThoughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtView.swift; sourceTree = "<group>"; };
 		F772C9812745227D00B2E3CA /* Reasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reasons.swift; sourceTree = "<group>"; };
+		F7BA256527490BAC00460B63 /* Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoughts.swift; sourceTree = "<group>"; };
+		F7C03FCF27481B1A008078C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F7C03FD127481B40008078C8 /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
+		F7C03FD327481B65008078C8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F7C03FD527481B86008078C8 /* CustomDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataPicker.swift; sourceTree = "<group>"; };
+		F7C03FD727481BA4008078C8 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F7F04BB22743C49900C99E7C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +128,7 @@
 		518A1445274270B6009D1850 = {
 			isa = PBXGroup;
 			children = (
+				512447BE274AE641003DF3BB /* PolarisDB.xcdatamodeld */,
 				518A1450274270B6009D1850 /* Polaris */,
 				518A1461274270B8009D1850 /* PolarisTests */,
 				518A146B274270B8009D1850 /* PolarisUITests */,
@@ -133,8 +152,11 @@
 				F772C984274541F900B2E3CA /* Model */,
 				EFA2ECFE27465B120031583F /* Data */,
 				F71B5A302746672D00648A51 /* ModelView */,
+				F7C03FCD27481AD7008078C8 /* CalendarView */,
+				F7C03FCE27481AE6008078C8 /* CalendarModel */,
 				F7777052274558AC005DE740 /* View */,
 				518A1451274270B6009D1850 /* PolarisApp.swift */,
+				512447C1274AE71C003DF3BB /* CoreDataController.swift */,
 				518A1455274270B8009D1850 /* Assets.xcassets */,
 				518A1457274270B8009D1850 /* Preview Content */,
 			);
@@ -179,10 +201,11 @@
 		F71B5A302746672D00648A51 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
-				F71B5A312746676700648A51 /* EmojiSelectionView.swift */,
 				F71B5A33274667A900648A51 /* ReasonSelectionView.swift */,
+				F71B5A312746676700648A51 /* EmojiSelectionView.swift */,
 				5111C3EA2747A02F006B0B55 /* MoodView.swift */,
 				5111C3EC2747A112006B0B55 /* ReasonsView.swift */,
+				F749151227490421008C1C5E /* ThoughtView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -192,6 +215,7 @@
 			children = (
 				F772C9812745227D00B2E3CA /* Reasons.swift */,
 				F73A65B92743F9C700D40684 /* Emoji.swift */,
+				F7BA256527490BAC00460B63 /* Thoughts.swift */,
 				EFA2ED0327465DC30031583F /* HelperModel.swift */,
 			);
 			path = Model;
@@ -201,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				EFA2ED0527465DF00031583F /* SplashView.swift */,
+				F7C03FD327481B65008078C8 /* CalendarView.swift */,
 				5119CA1A274519C50012AD00 /* ContentView.swift */,
 				518A1453274270B6009D1850 /* TrackerView.swift */,
 				F7F04BB22743C49900C99E7C /* TodayView.swift */,
@@ -211,6 +236,24 @@
 				EFA2ED0927465E550031583F /* InformationsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F7C03FCD27481AD7008078C8 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				F7C03FD527481B86008078C8 /* CustomDataPicker.swift */,
+				F7C03FD727481BA4008078C8 /* ModalView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		F7C03FCE27481AE6008078C8 /* CalendarModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7C03FCF27481B1A008078C8 /* Task.swift */,
+				F7C03FD127481B40008078C8 /* DataValue.swift */,
+			);
+			path = CalendarModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,24 +388,33 @@
 			files = (
 				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
+				F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */,
 				5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */,
+				512447C2274AE71C003DF3BB /* CoreDataController.swift in Sources */,
+				F7C03FD227481B40008078C8 /* DataValue.swift in Sources */,
 				EFA2ED0027465B580031583F /* EmojiData.swift in Sources */,
 				EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */,
 				5119CA1B274519C50012AD00 /* ContentView.swift in Sources */,
+				F749151327490421008C1C5E /* ThoughtView.swift in Sources */,
 				5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */,
 				EFA2ED0227465D8E0031583F /* HelperData.swift in Sources */,
 				EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */,
 				F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */,
+				F7C03FD627481B86008078C8 /* CustomDataPicker.swift in Sources */,
 				F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */,
 				F772C983274541BB00B2E3CA /* Reasons.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
+				F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */,
+				512447C0274AE641003DF3BB /* PolarisDB.xcdatamodeld in Sources */,
 				40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */,
 				EFA2ED0627465DF00031583F /* SplashView.swift in Sources */,
 				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,
 				EFA2ED0427465DC30031583F /* HelperModel.swift in Sources */,
 				EFA2ED0A27465E550031583F /* InformationsView.swift in Sources */,
 				EFA2ECFD27465B0B0031583F /* ReasonsData.swift in Sources */,
+				F7C03FD027481B1A008078C8 /* Task.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */,
+				F7C03FD827481BA4008078C8 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +763,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		512447BE274AE641003DF3BB /* PolarisDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				512447BF274AE641003DF3BB /* PolarisDB.xcdatamodel */,
+			);
+			currentVersion = 512447BF274AE641003DF3BB /* PolarisDB.xcdatamodel */;
+			name = PolarisDB.xcdatamodeld;
+			path = Polaris/PolarisDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 518A1446274270B6009D1850 /* Project object */;
 }

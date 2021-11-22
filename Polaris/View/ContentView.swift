@@ -25,7 +25,13 @@ struct ContentView: View {
                         Image(systemName: "doc.text.image")
                         Text("Today")
                     }
-
+                
+                CalendarView()
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Calendar")
+                    }
+                
                 FavoritesView()
                     .tabItem {
                         Image(systemName: "heart.square.fill")
