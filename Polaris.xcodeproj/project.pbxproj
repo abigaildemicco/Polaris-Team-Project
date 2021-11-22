@@ -29,7 +29,6 @@
 		EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0727465E1B0031583F /* HelpView.swift */; };
 		EFA2ED0A27465E550031583F /* InformationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0927465E550031583F /* InformationsView.swift */; };
 		EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0B27465F400031583F /* NotificationModal.swift */; };
-		EFEA266F274B97740054D46F /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA266E274B97740054D46F /* LargeButtonStyle.swift */; };
 		F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A312746676700648A51 /* EmojiSelectionView.swift */; };
 		F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A33274667A900648A51 /* ReasonSelectionView.swift */; };
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
@@ -42,8 +41,9 @@
 		F78B0209274B996100C30B85 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0208274B996100C30B85 /* AudioPlayer.swift */; };
 		F78B020B274B997E00C30B85 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020A274B997E00C30B85 /* RecordingsList.swift */; };
 		F78B020D274B999D00C30B85 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020C274B999D00C30B85 /* RecordView.swift */; };
-		F78B020F274B9FBE00C30B85 /* RecWritingThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */; };
+		F78B020F274B9FBE00C30B85 /* RecordingThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020E274B9FBD00C30B85 /* RecordingThoughtsView.swift */; };
 		F78B0211274BA62300C30B85 /* CreateThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0210274BA62300C30B85 /* CreateThoughtView.swift */; };
+		F78B0213274BBAA600C30B85 /* WritingThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0212274BBAA600C30B85 /* WritingThoughts.swift */; };
 		F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA256527490BAC00460B63 /* Thoughts.swift */; };
 		F7C03FD027481B1A008078C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FCF27481B1A008078C8 /* Task.swift */; };
 		F7C03FD227481B40008078C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD127481B40008078C8 /* DataValue.swift */; };
@@ -109,8 +109,9 @@
 		F78B0208274B996100C30B85 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		F78B020A274B997E00C30B85 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
 		F78B020C274B999D00C30B85 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
-		F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecWritingThoughtsView.swift; sourceTree = "<group>"; };
+		F78B020E274B9FBD00C30B85 /* RecordingThoughtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingThoughtsView.swift; sourceTree = "<group>"; };
 		F78B0210274BA62300C30B85 /* CreateThoughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThoughtView.swift; sourceTree = "<group>"; };
+		F78B0212274BBAA600C30B85 /* WritingThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingThoughts.swift; sourceTree = "<group>"; };
 		F7BA256527490BAC00460B63 /* Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoughts.swift; sourceTree = "<group>"; };
 		F7C03FCF27481B1A008078C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F7C03FD127481B40008078C8 /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
@@ -170,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				F772C984274541F900B2E3CA /* Model */,
-				F7C03FCE27481AE6008078C8 /* CalendarModel */,
 				EFA2ECFE27465B120031583F /* Data */,
 				F71B5A302746672D00648A51 /* ModelView */,
 				F7C03FCD27481AD7008078C8 /* CalendarView */,
@@ -230,8 +230,9 @@
 				5111C3EA2747A02F006B0B55 /* MoodView.swift */,
 				5111C3EC2747A112006B0B55 /* ReasonsView.swift */,
 				F749151227490421008C1C5E /* ThoughtView.swift */,
-				F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */,
+				F78B020E274B9FBD00C30B85 /* RecordingThoughtsView.swift */,
 				F78B0210274BA62300C30B85 /* CreateThoughtView.swift */,
+				F78B0212274BBAA600C30B85 /* WritingThoughts.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -471,13 +472,14 @@
 				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,
 				EFA2ED0427465DC30031583F /* HelperModel.swift in Sources */,
 				EFA2ED0A27465E550031583F /* InformationsView.swift in Sources */,
+				F78B0213274BBAA600C30B85 /* WritingThoughts.swift in Sources */,
 				F78B0209274B996100C30B85 /* AudioPlayer.swift in Sources */,
 				F78B0207274B995A00C30B85 /* AudioRecorder.swift in Sources */,
 				F78B0205274B994B00C30B85 /* RecordingDataModel.swift in Sources */,
 				EFA2ECFD27465B0B0031583F /* ReasonsData.swift in Sources */,
 				F7C03FD027481B1A008078C8 /* Task.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */,
-				F78B020F274B9FBE00C30B85 /* RecWritingThoughtsView.swift in Sources */,
+				F78B020F274B9FBE00C30B85 /* RecordingThoughtsView.swift in Sources */,
 				F7C03FD827481BA4008078C8 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

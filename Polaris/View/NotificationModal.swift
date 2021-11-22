@@ -5,6 +5,8 @@
 //  Created by Keyhan Mortezaeifar on 17/11/21.
 //  This is the Notification manager modal after clicking on "Set Notification" on TrackerView
 
+
+/*
 import UserNotifications
 import SwiftUI
 
@@ -149,3 +151,6 @@ struct NotificationModalView: View {
 //        NotificationModalView()
 //    }
 //}
+
+
+*/
