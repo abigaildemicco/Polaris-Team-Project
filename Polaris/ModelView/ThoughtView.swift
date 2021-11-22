@@ -10,25 +10,24 @@ import SwiftUI
 
 struct ThoughtView: View {
 
-    
+    @State private var CreateThought = false
     var thoughts = [today,yesterday]
-    
-    
-    /*
-    struct Ocean: Identifiable {
-        let name: String
-        let id = UUID()
-    }
-     
-     */
     
 
     var body: some View {
         
         
         VStack(spacing: 10){
-            
+    
             List {
+                Button("Add Thought") {
+             
+                    CreateThought.toggle()
+                }  .sheet(isPresented: $CreateThought, content: {
+                    CreateThoughtView(CreateThought: $CreateThought)})
+                          
+                       
+                
                 ForEach(thoughts) { Thought in
                     if #available(iOS 15.0, *) {
                         Text(Thought.name)
@@ -70,8 +69,9 @@ struct ThoughtView: View {
             .background(Color.gray)
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
             .padding()
+        }
         
-    }
+    
 }
 
 
