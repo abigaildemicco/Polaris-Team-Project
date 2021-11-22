@@ -15,6 +15,7 @@
 import SwiftUI
 
 struct TrackerView: View {
+    @State var showingSheet = false
     let emojiSize = 25.0
     let lastWeekDailySurveys = CoreDataController.shared.loadLastWeekDailySurveys()
     
@@ -30,14 +31,19 @@ struct TrackerView: View {
                 ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
             }
             .navigationTitle(Text("Stats"))
+            .navigationBarItems(trailing:                         Button("Notification") {
+                showingSheet.toggle()
             }
- //           .navigationBarItems(trailing:                         Button(" Stats") {
-//                showingSheet.toggle()
- //           }
- //           .sheet(isPresented: $showingSheet) {
-//                NotificationModalView()
- //           }
-// )
+            .sheet(isPresented: $showingSheet) {
+                if #available(iOS 15, *) {
+                    NotificationModalView()
+                } else {
+                    // Fallback on earlier versions
+                }
+            }
+ )
+            }
+            
         } //navview
        // .onAppear {
        //     CoreDataController.shared.addDailySurvey(mood: "good", reason: "university")
