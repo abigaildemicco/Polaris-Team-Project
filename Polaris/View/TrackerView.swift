@@ -27,7 +27,9 @@ struct TrackerView: View {
             //               }
             
             VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
-                ReasonsView()
+                ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
+            }
+            .navigationTitle(Text("Stats"))
             }
  //           .navigationBarItems(trailing:                         Button(" Stats") {
 //                showingSheet.toggle()
@@ -46,4 +48,3 @@ struct TrackerView: View {
             TrackerView()
         }
     }
-}
