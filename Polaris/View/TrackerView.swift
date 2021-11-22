@@ -16,6 +16,8 @@ import SwiftUI
 
 struct TrackerView: View {
     let emojiSize = 25.0
+    let lastWeekDailySurveys = CoreDataController.shared.loadLastWeekDailySurveys()
+    
     var body: some View{
         NavigationView {
             
@@ -24,11 +26,14 @@ struct TrackerView: View {
             //                 .fill(Color.blue).ignoresSafeArea()
             //               }
             
-            VStack{MoodView()
+            VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView()
             }
             .navigationTitle("Stats")
         } //navview
+        .onAppear {
+            CoreDataController.shared.addDailySurvey(mood: "good", reason: "university")
+        }
     }//body
     struct TrackerView_Previews: PreviewProvider {
         static var previews: some View {
