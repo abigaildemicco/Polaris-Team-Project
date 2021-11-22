@@ -29,6 +29,7 @@
 		EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0727465E1B0031583F /* HelpView.swift */; };
 		EFA2ED0A27465E550031583F /* InformationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0927465E550031583F /* InformationsView.swift */; };
 		EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA2ED0B27465F400031583F /* NotificationModal.swift */; };
+		EFEA266F274B97740054D46F /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA266E274B97740054D46F /* LargeButtonStyle.swift */; };
 		F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A312746676700648A51 /* EmojiSelectionView.swift */; };
 		F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B5A33274667A900648A51 /* ReasonSelectionView.swift */; };
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
@@ -95,6 +96,7 @@
 		EFA2ED0727465E1B0031583F /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		EFA2ED0927465E550031583F /* InformationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsView.swift; sourceTree = "<group>"; };
 		EFA2ED0B27465F400031583F /* NotificationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModal.swift; sourceTree = "<group>"; };
+		EFEA266E274B97740054D46F /* LargeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonStyle.swift; sourceTree = "<group>"; };
 		F71B5A312746676700648A51 /* EmojiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSelectionView.swift; sourceTree = "<group>"; };
 		F71B5A33274667A900648A51 /* ReasonSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonSelectionView.swift; sourceTree = "<group>"; };
 		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F772C984274541F900B2E3CA /* Model */,
+				F7C03FCE27481AE6008078C8 /* CalendarModel */,
 				EFA2ECFE27465B120031583F /* Data */,
 				F71B5A302746672D00648A51 /* ModelView */,
 				F7C03FCD27481AD7008078C8 /* CalendarView */,
@@ -251,6 +254,7 @@
 				F7C03FD327481B65008078C8 /* CalendarView.swift */,
 				5119CA1A274519C50012AD00 /* ContentView.swift */,
 				518A1453274270B6009D1850 /* TrackerView.swift */,
+				EFEA266E274B97740054D46F /* LargeButtonStyle.swift */,
 				F7F04BB22743C49900C99E7C /* TodayView.swift */,
 				EFA2ED0B27465F400031583F /* NotificationModal.swift */,
 				40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */,
