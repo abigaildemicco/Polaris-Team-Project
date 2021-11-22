@@ -16,10 +16,8 @@ struct RecWritingThoughtsView: View {
     var body: some View {
         
             VStack (spacing: 10.0){
-                
-                
+
                 RecordView(audioRecorder: AudioRecorder())
-                
                 
             }
         
