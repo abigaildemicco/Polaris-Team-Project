@@ -12,6 +12,9 @@
 //  Created by Antonio Iacono on 19/11/21.
 //
 
+
+
+
 import SwiftUI
 
 struct CustomDataPicker: View {
@@ -109,8 +112,7 @@ struct CustomDataPicker: View {
                      //   .font(.title3.bold())
                     Spacer()
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white :
-                                Color("Pink"))
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .pink)
                         .frame(width: 8, height: 8)
                 }
                 else{
