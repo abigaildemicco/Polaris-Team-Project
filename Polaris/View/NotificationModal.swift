@@ -5,8 +5,8 @@
 //  Created by Keyhan Mortezaeifar on 17/11/21.
 //  This is the Notification manager modal after clicking on "Set Notification" on TrackerView
 
+import UserNotifications
 import SwiftUI
-
 
 struct DaysWanted {
   var name: String
@@ -33,7 +33,7 @@ struct NotificationModalView: View {
     
     var body: some View {
         VStack {
-            
+// Showing the date picker for the user to choose a time of the day
             DatePicker(" Choose the moment of your\n day you want to be reminded\n to make your input", selection: $dayPreferred, displayedComponents: .hourAndMinute)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
@@ -46,7 +46,8 @@ struct NotificationModalView: View {
                 Text("Saturday0")
                 Text("Sunday0")
             }
-            
+       
+// Creating a selectable list of days with checkmarks
 //            ForEach(daysWanted, id: \.self) { daysWanted in
 //              HStack {
 //                Text(daysWanted.name)
@@ -59,8 +60,6 @@ struct NotificationModalView: View {
 //            }
             
             
-            
-            
 //            Button("Done") {
 //                dismiss()
 //            }
@@ -69,6 +68,38 @@ struct NotificationModalView: View {
 //            .background(Color.black)
             
         }
+        
+        
+// This button should be moved to the to right of the Modal integrated with the "Done" button
+        VStack {
+            Button("Schedule Notification") {
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        print("All set!")
+                        let content = UNMutableNotificationContent()
+                        content.title = "Polaris app "
+    //                    content.subtitle = "How do you feel ? 🌟"
+                        content.body = "Time a minute to reflect about how you feel right now 🌟"
+                        content.sound = UNNotificationSound.default
+
+                        // show this notification on the lock screen a few seconds from now so CMD + L quick to lock the screen
+                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+
+                        // choose a random identifier
+                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+                        // add our notification request to ask to the user his consent
+                        UNUserNotificationCenter.current().add(request)
+
+                    } else if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+                // second
+            }
+            
+        }
+        
     }
 }
 
