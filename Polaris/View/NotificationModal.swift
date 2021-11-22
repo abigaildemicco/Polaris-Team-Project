@@ -14,6 +14,7 @@ struct DaysWanted {
 }
 
 @available(iOS 15, *)
+
 struct NotificationModalView: View {
     
     @Environment(\.dismiss) var dismiss
