@@ -41,16 +41,16 @@ class CoreDataController { //serve a comunicare con il database (è il postino)
     func loadLastWeekDailySurveys() -> [DailySurvey] { //legge dal db i sondaggi dell'ultima settimana
         print("Get dailySurveys of last week from context")
         
-//        let currentDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
-//        let oneWeekAgo = Calendar.current.date(byAdding: .day, value: -7, to: currentDate)
+        let currentDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let oneWeekAgo = Calendar.current.date(byAdding: .day, value: -7, to: currentDate)
         
-//        let startDay = Int64(oneWeekAgo!.timeIntervalSince1970)
+        let startDay = Int64(oneWeekAgo!.timeIntervalSince1970)
         
         let fetchRequest : NSFetchRequest<DailySurvey> = DailySurvey.fetchRequest()
-//        fetchRequest.returnsObjectsAsFaults = false
+        fetchRequest.returnsObjectsAsFaults = false
             
-//        let predicate = NSPredicate(format: "day > %@", startDay)
-//        fetchRequest.predicate = predicate
+        let predicate: NSPredicate = NSPredicate(format: "date > %i", startDay)
+        fetchRequest.predicate = predicate
         
         do {
             let lastWeekSurveys = try self.context.fetch(fetchRequest)
