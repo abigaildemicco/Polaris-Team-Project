@@ -49,7 +49,7 @@ struct ReasonSelectionView: View {
             }.padding(.bottom)
         }
         .frame(width: UIScreen.main.bounds.width - 32)
-        .background(Color.gray)
+        .background(Color.gray.brightness(0.38))
         .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
         .padding()
         

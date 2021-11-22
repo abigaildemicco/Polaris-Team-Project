@@ -30,13 +30,13 @@ struct TrackerView: View {
             VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
             }
-            .navigationTitle(Text("Stats"))
+            .navigationTitle(Text("Statistics"))
             .navigationBarItems(trailing:                         Button("Notification") {
                 showingSheet.toggle()
             }
             .sheet(isPresented: $showingSheet) {
                 if #available(iOS 15, *) {
-                    NotificationModalView()
+                    //NotificationModalView()
                 } else {
                     // Fallback on earlier versions
                 }

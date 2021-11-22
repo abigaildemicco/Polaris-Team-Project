@@ -16,8 +16,8 @@ struct ContentView: View {
                 
                 TrackerView()
                     .tabItem {
-                        Image(systemName: "calendar")
-                        Text("Track")
+                        Image(systemName: "hourglass")
+                        Text("Stats")
                     }
 
                 TodayView(showModal: .constant(true))
