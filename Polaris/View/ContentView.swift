@@ -20,7 +20,7 @@ struct ContentView: View {
                         Text("Track")
                     }
 
-                TodayView()
+                TodayView(showModal: .constant(true))
                     .tabItem {
                         Image(systemName: "doc.text.image")
                         Text("Today")

@@ -6,18 +6,22 @@
 //
 
 import Foundation
+import OpenGLES
 
 
 struct Thought : Identifiable {
     
     var name : String
     var note : String
-    
-    
+    var rec : Bool
+   // let fileURL: URL
+   // let createdAt: Date
+    //var Rec : Recording
+       
     var id : String { name }
     
     
 }
 
-var today = Thought (name: "Today",note: "Today I feel really good. I am coding with Swift !")
-var yesterday = Thought (name: "Yesterday", note: "Yesterday I felt bad, I ate too much!")
+var today = Thought (name: "Today",note: "Today I feel really good. I am coding with Swift !",rec: false)
+var yesterday = Thought (name: "Yesterday", note: "Yesterday I felt bad, I ate too much!",rec: false)

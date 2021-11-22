@@ -120,7 +120,7 @@ struct CustomDataPicker: View {
                        showModal.toggle()
                     }.foregroundColor(.black)
                    .sheet(isPresented: $showModal, content: {
-                       ModalView(showModal: $showModal)
+                       TodayView(showModal: $showModal)
                    })
                     Spacer()
                 }

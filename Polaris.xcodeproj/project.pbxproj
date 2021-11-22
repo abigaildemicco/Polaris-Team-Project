@@ -34,6 +34,15 @@
 		F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A65B92743F9C700D40684 /* Emoji.swift */; };
 		F749151327490421008C1C5E /* ThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749151227490421008C1C5E /* ThoughtView.swift */; };
 		F772C983274541BB00B2E3CA /* Reasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F772C9812745227D00B2E3CA /* Reasons.swift */; };
+		F78B0201274B993300C30B85 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0200274B993300C30B85 /* Helper.swift */; };
+		F78B0203274B994100C30B85 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0202274B994100C30B85 /* Extensions.swift */; };
+		F78B0205274B994B00C30B85 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0204274B994B00C30B85 /* RecordingDataModel.swift */; };
+		F78B0207274B995A00C30B85 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0206274B995A00C30B85 /* AudioRecorder.swift */; };
+		F78B0209274B996100C30B85 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0208274B996100C30B85 /* AudioPlayer.swift */; };
+		F78B020B274B997E00C30B85 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020A274B997E00C30B85 /* RecordingsList.swift */; };
+		F78B020D274B999D00C30B85 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020C274B999D00C30B85 /* RecordView.swift */; };
+		F78B020F274B9FBE00C30B85 /* RecWritingThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */; };
+		F78B0211274BA62300C30B85 /* CreateThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0210274BA62300C30B85 /* CreateThoughtView.swift */; };
 		F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA256527490BAC00460B63 /* Thoughts.swift */; };
 		F7C03FD027481B1A008078C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FCF27481B1A008078C8 /* Task.swift */; };
 		F7C03FD227481B40008078C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD127481B40008078C8 /* DataValue.swift */; };
@@ -91,6 +100,15 @@
 		F73A65B92743F9C700D40684 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		F749151227490421008C1C5E /* ThoughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtView.swift; sourceTree = "<group>"; };
 		F772C9812745227D00B2E3CA /* Reasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reasons.swift; sourceTree = "<group>"; };
+		F78B0200274B993300C30B85 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F78B0202274B994100C30B85 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F78B0204274B994B00C30B85 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		F78B0206274B995A00C30B85 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		F78B0208274B996100C30B85 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		F78B020A274B997E00C30B85 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		F78B020C274B999D00C30B85 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecWritingThoughtsView.swift; sourceTree = "<group>"; };
+		F78B0210274BA62300C30B85 /* CreateThoughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThoughtView.swift; sourceTree = "<group>"; };
 		F7BA256527490BAC00460B63 /* Thoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoughts.swift; sourceTree = "<group>"; };
 		F7C03FCF27481B1A008078C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F7C03FD127481B40008078C8 /* DataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
@@ -154,6 +172,9 @@
 				F71B5A302746672D00648A51 /* ModelView */,
 				F7C03FCD27481AD7008078C8 /* CalendarView */,
 				F7C03FCE27481AE6008078C8 /* CalendarModel */,
+				F78B01FF274B990A00C30B85 /* RecorderView */,
+				F78B01FE274B97C200C30B85 /* Audio Managers */,
+				F78B01FD274B979800C30B85 /* Div */,
 				F7777052274558AC005DE740 /* View */,
 				518A1451274270B6009D1850 /* PolarisApp.swift */,
 				512447C1274AE71C003DF3BB /* CoreDataController.swift */,
@@ -206,6 +227,8 @@
 				5111C3EA2747A02F006B0B55 /* MoodView.swift */,
 				5111C3EC2747A112006B0B55 /* ReasonsView.swift */,
 				F749151227490421008C1C5E /* ThoughtView.swift */,
+				F78B020E274B9FBD00C30B85 /* RecWritingThoughtsView.swift */,
+				F78B0210274BA62300C30B85 /* CreateThoughtView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -236,6 +259,34 @@
 				EFA2ED0927465E550031583F /* InformationsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F78B01FD274B979800C30B85 /* Div */ = {
+			isa = PBXGroup;
+			children = (
+				F78B0200274B993300C30B85 /* Helper.swift */,
+				F78B0202274B994100C30B85 /* Extensions.swift */,
+				F78B0204274B994B00C30B85 /* RecordingDataModel.swift */,
+			);
+			path = Div;
+			sourceTree = "<group>";
+		};
+		F78B01FE274B97C200C30B85 /* Audio Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F78B0206274B995A00C30B85 /* AudioRecorder.swift */,
+				F78B0208274B996100C30B85 /* AudioPlayer.swift */,
+			);
+			path = "Audio Managers";
+			sourceTree = "<group>";
+		};
+		F78B01FF274B990A00C30B85 /* RecorderView */ = {
+			isa = PBXGroup;
+			children = (
+				F78B020A274B997E00C30B85 /* RecordingsList.swift */,
+				F78B020C274B999D00C30B85 /* RecordView.swift */,
+			);
+			path = RecorderView;
 			sourceTree = "<group>";
 		};
 		F7C03FCD27481AD7008078C8 /* CalendarView */ = {
@@ -387,12 +438,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
+				F78B020D274B999D00C30B85 /* RecordView.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
 				F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */,
 				5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */,
 				512447C2274AE71C003DF3BB /* CoreDataController.swift in Sources */,
 				F7C03FD227481B40008078C8 /* DataValue.swift in Sources */,
 				EFA2ED0027465B580031583F /* EmojiData.swift in Sources */,
+				F78B020B274B997E00C30B85 /* RecordingsList.swift in Sources */,
 				EFA2ED0827465E1B0031583F /* HelpView.swift in Sources */,
 				5119CA1B274519C50012AD00 /* ContentView.swift in Sources */,
 				F749151327490421008C1C5E /* ThoughtView.swift in Sources */,
@@ -400,10 +453,13 @@
 				EFA2ED0227465D8E0031583F /* HelperData.swift in Sources */,
 				EFA2ED0C27465F400031583F /* NotificationModal.swift in Sources */,
 				F71B5A34274667A900648A51 /* ReasonSelectionView.swift in Sources */,
+				F78B0211274BA62300C30B85 /* CreateThoughtView.swift in Sources */,
 				F7C03FD627481B86008078C8 /* CustomDataPicker.swift in Sources */,
 				F71B5A322746676700648A51 /* EmojiSelectionView.swift in Sources */,
 				F772C983274541BB00B2E3CA /* Reasons.swift in Sources */,
+				F78B0201274B993300C30B85 /* Helper.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
+				F78B0203274B994100C30B85 /* Extensions.swift in Sources */,
 				F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */,
 				512447C0274AE641003DF3BB /* PolarisDB.xcdatamodeld in Sources */,
 				40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */,
@@ -411,9 +467,13 @@
 				F73A65BA2743F9C700D40684 /* Emoji.swift in Sources */,
 				EFA2ED0427465DC30031583F /* HelperModel.swift in Sources */,
 				EFA2ED0A27465E550031583F /* InformationsView.swift in Sources */,
+				F78B0209274B996100C30B85 /* AudioPlayer.swift in Sources */,
+				F78B0207274B995A00C30B85 /* AudioRecorder.swift in Sources */,
+				F78B0205274B994B00C30B85 /* RecordingDataModel.swift in Sources */,
 				EFA2ECFD27465B0B0031583F /* ReasonsData.swift in Sources */,
 				F7C03FD027481B1A008078C8 /* Task.swift in Sources */,
 				F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */,
+				F78B020F274B9FBE00C30B85 /* RecWritingThoughtsView.swift in Sources */,
 				F7C03FD827481BA4008078C8 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

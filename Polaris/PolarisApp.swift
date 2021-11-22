@@ -14,7 +14,7 @@ struct PolarisApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                      ContentView()
                 .environment(\.managedObjectContext, PolarisApp.persistentContainer.viewContext)
            // ThoughtView()
         }
