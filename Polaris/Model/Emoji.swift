@@ -11,6 +11,7 @@ import SwiftUI
 struct Emoji : Identifiable{
     
     var name : String
+    var description: String
     var emojiSize : Double
     var buttonColour : Color
     var id : String { name }
@@ -19,11 +20,11 @@ struct Emoji : Identifiable{
 
 
 var Emojis : [Emoji] = [
-    Emoji (name: "😢",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "🙁",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "😐",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "☺️",emojiSize: 50.0,buttonColour: .blue),
-    Emoji (name: "😁",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😢",description: "very bad",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "🙁",description: "bad",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😐",description: "none",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "☺️",description: "good",emojiSize: 50.0,buttonColour: .blue),
+    Emoji (name: "😁",description:"very good",emojiSize: 50.0,buttonColour: .blue),
 
 ]
 

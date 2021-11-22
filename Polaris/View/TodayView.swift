@@ -14,7 +14,7 @@ struct TodayView: View {
     
     @State private var hideStatusBar = false
     @State private var date = "15 November 2021"
-    
+    @Binding var showModal: Bool
     
     
     var body: some View {
@@ -24,17 +24,13 @@ struct TodayView: View {
         NavigationView{
             ScrollView {
                 VStack(spacing: 50.0){
-                    
-                    
+                                  
                     EmojiSelectionView()
                     
                     ReasonSelectionView()
+                    
                     ThoughtView()
-
-                    
-                 
-                    
-                    
+    
                 }.navigationTitle(date)
                     .padding(.top,80)
                     .statusBar(hidden: false)
@@ -54,7 +50,7 @@ struct TodayView: View {
 struct TodayView_Previews: PreviewProvider {
     static var previews: some View {
         
-        TodayView()
+        TodayView(showModal: .constant(true))
     }
 }
 

@@ -109,8 +109,7 @@ struct CustomDataPicker: View {
                      //   .font(.title3.bold())
                     Spacer()
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white :
-                                Color("Pink"))
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .pink)
                         .frame(width: 8, height: 8)
                 }
                 else{
@@ -118,7 +117,7 @@ struct CustomDataPicker: View {
                        showModal.toggle()
                     }.foregroundColor(.black)
                    .sheet(isPresented: $showModal, content: {
-                       ModalView(showModal: $showModal)
+                       TodayView(showModal: $showModal)
                    })
                     Spacer()
                 }

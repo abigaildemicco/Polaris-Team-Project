@@ -16,11 +16,11 @@ struct ContentView: View {
                 
                 TrackerView()
                     .tabItem {
-                        Image(systemName: "calendar")
-                        Text("Track")
+                        Image(systemName: "hourglass")
+                        Text("Stats")
                     }
 
-                TodayView()
+                TodayView(showModal: .constant(true))
                     .tabItem {
                         Image(systemName: "doc.text.image")
                         Text("Today")
