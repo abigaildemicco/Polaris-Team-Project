@@ -29,11 +29,17 @@ struct TrackerView: View {
             VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView()
             }
-            .navigationTitle("Stats")
+ //           .navigationBarItems(trailing:                         Button(" Stats") {
+//                showingSheet.toggle()
+ //           }
+ //           .sheet(isPresented: $showingSheet) {
+//                NotificationModalView()
+ //           }
+// )
         } //navview
-        .onAppear {
-            CoreDataController.shared.addDailySurvey(mood: "good", reason: "university")
-        }
+       // .onAppear {
+       //     CoreDataController.shared.addDailySurvey(mood: "good", reason: "university")
+        // }
     }//body
     struct TrackerView_Previews: PreviewProvider {
         static var previews: some View {
