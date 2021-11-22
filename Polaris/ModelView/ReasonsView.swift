@@ -5,9 +5,17 @@
 //  Created by Abigail De Micco on 19/11/21.
 //
 
-import SwiftUI
+/* import SwiftUI
 
 struct ReasonsView: View {
+    let lastWeekSurveys: [DailySurvey]
+    @State var ReasonsPercentage = [
+        "very bad": 0,
+        "bad": 0,
+        "none": 0,
+        "good": 0,
+        "very good": 0
+    ]
     var body: some View {
         
             VStack (spacing: 10.0){
@@ -37,6 +45,7 @@ struct ReasonsView: View {
 
 struct ReasonsView_Previews: PreviewProvider {
     static var previews: some View {
-        ReasonsView()
+        ReasonsView(lastWeekSurveys: [])
     }
 }
+*/
