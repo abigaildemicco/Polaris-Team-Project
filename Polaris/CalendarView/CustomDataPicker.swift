@@ -10,8 +10,8 @@
 //  Polaris
 //
 //  Created by Antonio Iacono on 19/11/21.
-//
-
+// This is to manage the calendar and to scroll through all the months and years
+// 
 import SwiftUI
 
 struct CustomDataPicker: View {

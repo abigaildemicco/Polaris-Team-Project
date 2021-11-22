@@ -3,7 +3,7 @@
 //  Polaris
 //
 //  Created by Antonio Iacono on 19/11/21.
-//
+//Create the data value
 
 
 import SwiftUI

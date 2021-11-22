@@ -4,7 +4,7 @@
 //
 //  Created by Antonio Iacono on 19/11/21.
 //
-
+// This was to add small circles on the bottom of specific days (now is useless)
 
 import SwiftUI
 
