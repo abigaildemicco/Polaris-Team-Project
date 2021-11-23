@@ -18,7 +18,8 @@ struct ThoughtView: View {
         
         
         VStack(spacing: 10){
-    
+            Text(" SAVE YOUR FEELINGS!").font(.system(size: 24, weight: .heavy, design: .rounded)) .padding()
+                
             List {
                 Button("Add Thought") {
              

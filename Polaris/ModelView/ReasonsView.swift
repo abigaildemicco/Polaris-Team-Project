@@ -58,7 +58,7 @@ struct ReasonsView: View {
         }
         valuesArray = valuesArray.sorted().reversed()
         for n in 0 ... 2 {
-            print("sono io  \(n)")
+            print(n)
             StatsReasons[n] = ReasonsValue.keys.first { key in
                 ReasonsValue[key] == valuesArray[n] && !StatsReasons.contains(key)
             }!
