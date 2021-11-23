@@ -27,7 +27,8 @@ struct TrackerView: View {
             //                 .fill(Color.blue).ignoresSafeArea()
             //               }
             
-            VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
+            VStack{
+                MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
             }
             .navigationTitle(Text("Statistics"))
@@ -45,7 +46,7 @@ struct TrackerView: View {
             }
         .onAppear {
 //            CoreDataController.shared.deleteSurveys(reason: "stress")
-//            CoreDataController.shared.addDailySurvey(mood: "ASPE", reason: "KEYHAN")
+           CoreDataController.shared.addDailySurvey(mood: "very good", reason: "Diet")
          }
         } //navview
 
