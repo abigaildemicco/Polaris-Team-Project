@@ -24,7 +24,7 @@ struct EmojiSelectionView: View {
                 }
             }
         } .frame(width: UIScreen.main.bounds.width - 32,height: 150)
-            .background(Color.gray)
+            .background(Color.gray.brightness(0.38))
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
             .padding()
         

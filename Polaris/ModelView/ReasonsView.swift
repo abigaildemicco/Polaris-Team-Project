@@ -36,16 +36,14 @@ struct ReasonsView: View {
                             .frame(width: 220.0)
                     }
                 }
-                
-            }
-        }   .padding()
-            .background(Color.gray)
-            .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
-            .padding()
-            .onAppear {
-                guard lastWeekSurveys.count > 0 else { return }
-                let total = lastWeekSurveys.count
-                for survey in lastWeekSurveys {
+            }   .padding()
+                .background(Color.gray.brightness(0.38))
+                .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                .padding()
+                .onAppear {
+                  guard lastWeekSurveys.count > 0 else { return }
+                  let total = lastWeekSurveys.count
+                  for survey in lastWeekSurveys {
                     ReasonsValue[survey.reason!] = ReasonsValue[survey.reason!]! + 1.0/Double(total)
                     print("\(survey.reason!): \(ReasonsValue[survey.reason!]!)")
                 }

@@ -30,7 +30,7 @@ struct MoodView: View {
                     }
                 }
             }  .padding()
-                .background(Color.gray)
+                .background(Color.gray.brightness(0.38))
                 .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                 .padding()
                 .onAppear {

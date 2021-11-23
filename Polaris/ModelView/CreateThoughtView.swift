@@ -8,22 +8,43 @@
 
 import SwiftUI
 
-struct CreateThoughtView: View {
+struct CreateThoughtView :  View {
+    
+    
     @Binding var CreateThought: Bool
-   
+    
+    
     
     var body: some View {
-        NavigationView {
-            Group{
-                VStack{
+        
+        TabView {
+            ForEach(0..<2) { i in
+                ZStack {
+                    Color.black
+
+                    if(i==0){
+                        
+                        RecordingThoughtsView(audioRecorder: AudioRecorder()).colorInvert()
+                    }
+                    else{
+                        TextFieldView().colorInvert()
+                        
+                    }
                     
-                    RecWritingThoughtsView(audioRecorder: AudioRecorder())
-                }
+                }.clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
             }
-        }
+            .padding(.all, 10)
+        }.colorInvert()
+        .frame(width: UIScreen.main.bounds.width)
+        .tabViewStyle(PageTabViewStyle())
+        
+        
+        
     }
     
 }
+
+
 
 
 

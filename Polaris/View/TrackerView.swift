@@ -30,7 +30,7 @@ struct TrackerView: View {
             VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
             }
-            .navigationTitle(Text("Stats"))
+            .navigationTitle(Text("Statistics"))
             .navigationBarItems(trailing:                         Button("Notification") {
                 showingSheet.toggle()
             }
