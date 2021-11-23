@@ -21,39 +21,31 @@ struct TrackerView: View {
     
     var body: some View{
         NavigationView {
-            
-            //                ZStack {
-            //                 Rectangle()
-            //                 .fill(Color.blue).ignoresSafeArea()
-            //               }
-            
-            VStack{
-                MoodView(lastWeekSurveys: lastWeekDailySurveys)
-                ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
-            }
-            .navigationTitle(Text("Statistics"))
-            .navigationBarItems(trailing:                         Button("Notification") {
-                showingSheet.toggle()
-            }
-            .sheet(isPresented: $showingSheet) {
-               
-                if #available(iOS 15, *) {
-                    NotificationModalView()
-                } else {
-                    // Fallback on earlier versions
+            ScrollView {
+                VStack{
+                    MoodView(lastWeekSurveys: lastWeekDailySurveys)
+                    ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
                 }
+                .navigationTitle(Text("Statistics"))
+                .navigationBarItems(trailing:                         Button("Notification") {
+                    showingSheet.toggle()
+                }
+                                        .sheet(isPresented: $showingSheet) {
+                    
+                    if #available(iOS 15, *) {
+                        NotificationModalView()
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                }
+                )
             }
- )
-            }
-        .onAppear {
-//            CoreDataController.shared.deleteSurveys(reason: "stress")
-//           CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Love")
-         }
-        } //navview
-
-    }//body
-    struct TrackerView_Previews: PreviewProvider {
-        static var previews: some View {
-            TrackerView()
-        }
+        } //scrollview
+    } //navview
+    
+}//body
+struct TrackerView_Previews: PreviewProvider {
+    static var previews: some View {
+        TrackerView()
     }
+}
