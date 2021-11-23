@@ -44,7 +44,9 @@ struct RecordView: View {
             }
                 .navigationBarTitle("Voice recorder")
                 .navigationBarItems(trailing: EditButton())
+                
         }
+        
     }
 }
 

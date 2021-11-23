@@ -14,11 +14,7 @@ struct ContentView: View {
         ZStack {
             TabView {
                 
-                TrackerView()
-                    .tabItem {
-                        Image(systemName: "hourglass")
-                        Text("Stats")
-                    }
+                
 
                 TodayView(showModal: .constant(true))
                     .tabItem {
@@ -36,6 +32,12 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "heart.square.fill")
                         Text("Records")
+                    }
+                
+                TrackerView()
+                    .tabItem {
+                        Image(systemName: "hourglass")
+                        Text("Stats")
                     }
 
                 HelpView()

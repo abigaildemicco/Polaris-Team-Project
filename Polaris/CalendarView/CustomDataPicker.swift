@@ -96,7 +96,7 @@ struct CustomDataPicker: View {
             if value.day != -1 {
                 if let task = tasks.first(where: {
                     task in
-                    return isSameDay(date1: task.taskDate, date2: value.date)
+                    return isSameDay(date1: task.taskDate, date2: currentDate)
                 }){
                     Button("\(value.day)") {
                        showModal.toggle()
@@ -109,7 +109,7 @@ struct CustomDataPicker: View {
                      //   .font(.title3.bold())
                     Spacer()
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .pink)
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .white)
                         .frame(width: 8, height: 8)
                 }
                 else{

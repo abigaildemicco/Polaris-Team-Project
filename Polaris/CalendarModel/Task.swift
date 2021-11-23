@@ -28,8 +28,8 @@ var tasks: [TaskMetaData] = [
 
     TaskMetaData(task: [
    
-//        Task(title: "bestemmiare"),
-        Task(title: "bestemmiare di nuovo")
+
+        Task(title: "hi")
          ], taskDate: getSampleDate(offset: 1))
     ]
   
