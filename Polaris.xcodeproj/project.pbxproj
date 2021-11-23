@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */; };
 		40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DBDE112745244C00BE2938 /* FavoritesView.swift */; };
 		5111C3EB2747A030006B0B55 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EA2747A02F006B0B55 /* MoodView.swift */; };
 		5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C3EC2747A112006B0B55 /* ReasonsView.swift */; };
@@ -44,6 +43,7 @@
 		F78B020F274B9FBE00C30B85 /* RecordingThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B020E274B9FBD00C30B85 /* RecordingThoughtsView.swift */; };
 		F78B0211274BA62300C30B85 /* CreateThoughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0210274BA62300C30B85 /* CreateThoughtView.swift */; };
 		F78B0213274BBAA600C30B85 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B0212274BBAA600C30B85 /* TextFieldView.swift */; };
+		F78B0218274CDD6700C30B85 /* LargeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEA266E274B97740054D46F /* LargeButtonStyle.swift */; };
 		F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA256527490BAC00460B63 /* Thoughts.swift */; };
 		F7C03FD027481B1A008078C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FCF27481B1A008078C8 /* Task.swift */; };
 		F7C03FD227481B40008078C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD127481B40008078C8 /* DataValue.swift */; };
@@ -71,7 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteRecordings.swift; sourceTree = "<group>"; };
 		40DBDE112745244C00BE2938 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		5111C3EA2747A02F006B0B55 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		5111C3EC2747A112006B0B55 /* ReasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsView.swift; sourceTree = "<group>"; };
@@ -258,7 +257,6 @@
 				EFEA266E274B97740054D46F /* LargeButtonStyle.swift */,
 				F7F04BB22743C49900C99E7C /* TodayView.swift */,
 				EFA2ED0B27465F400031583F /* NotificationModal.swift */,
-				40C6BB482743CC4F008A14AA /* FavoriteRecordings.swift */,
 				40DBDE112745244C00BE2938 /* FavoritesView.swift */,
 				EFA2ED0727465E1B0031583F /* HelpView.swift */,
 				EFA2ED0927465E550031583F /* InformationsView.swift */,
@@ -442,7 +440,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C6BB492743CC4F008A14AA /* FavoriteRecordings.swift in Sources */,
 				F78B020D274B999D00C30B85 /* RecordView.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
 				F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */,
@@ -465,6 +462,7 @@
 				F78B0201274B993300C30B85 /* Helper.swift in Sources */,
 				518A1452274270B6009D1850 /* PolarisApp.swift in Sources */,
 				F78B0203274B994100C30B85 /* Extensions.swift in Sources */,
+				F78B0218274CDD6700C30B85 /* LargeButtonStyle.swift in Sources */,
 				F7BA256627490BAC00460B63 /* Thoughts.swift in Sources */,
 				512447C0274AE641003DF3BB /* PolarisDB.xcdatamodeld in Sources */,
 				40DBDE122745244C00BE2938 /* FavoritesView.swift in Sources */,
