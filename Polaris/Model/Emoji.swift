@@ -15,6 +15,7 @@ import SwiftUI
     var emojiSize : Double
     var buttonColour : Color
     var emojiSelected : Bool
+     var scale : Float
     var id = UUID()
 
 }
@@ -30,11 +31,11 @@ class emojyManager : ObservableObject { @Published var emojis: [Emoji] = [
 
 */
  var Emojis : [Emoji] = [
-    Emoji (name: "😢",description: "very bad",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false),
-    Emoji (name: "🙁",description: "bad",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false),
-    Emoji (name: "😐",description: "none",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false),
-    Emoji (name: "☺️",description: "good",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false),
-    Emoji (name: "😁",description:"very good",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false),
+    Emoji (name: "😢",description: "very bad",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false,scale: 1.0),
+    Emoji (name: "🙁",description: "bad",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false,scale: 1.0),
+    Emoji (name: "😐",description: "none",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false,scale: 1.0),
+    Emoji (name: "☺️",description: "good",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false,scale: 1.0),
+    Emoji (name: "😁",description:"very good",emojiSize: 50.0,buttonColour: .blue,emojiSelected: false,scale: 1.0),
 
 ]
 
