@@ -36,18 +36,19 @@ struct TrackerView: View {
             }
             .sheet(isPresented: $showingSheet) {
                 if #available(iOS 15, *) {
-                    //NotificationModalView()
+//                    NotificationModalView()
                 } else {
                     // Fallback on earlier versions
                 }
             }
  )
             }
-            
+        .onAppear {
+//            CoreDataController.shared.deleteSurveys(reason: "stress")
+//            CoreDataController.shared.addDailySurvey(mood: "ASPE", reason: "KEYHAN")
+         }
         } //navview
-       // .onAppear {
-       //     CoreDataController.shared.addDailySurvey(mood: "good", reason: "university")
-        // }
+
     }//body
     struct TrackerView_Previews: PreviewProvider {
         static var previews: some View {
