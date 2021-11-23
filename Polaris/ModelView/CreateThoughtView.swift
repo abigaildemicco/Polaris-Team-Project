@@ -27,7 +27,7 @@ struct CreateThoughtView :  View {
                         RecordingThoughtsView(audioRecorder: AudioRecorder()).colorInvert()
                     }
                     else{
-                        TextFieldView().colorInvert()
+                       TextFieldView().colorInvert()
                         
                     }
                     

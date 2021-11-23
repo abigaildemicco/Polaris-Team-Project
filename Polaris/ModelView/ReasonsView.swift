@@ -16,7 +16,7 @@ struct ReasonsView: View {
         "Diet":0,
         "Travel":0,
         "Weather":0,
-        "Work":0,     
+        "Work":0,
         "Love":0,
         "Sport":0,
         "Stress":0,
@@ -24,7 +24,7 @@ struct ReasonsView: View {
         "Health": 0,
     ]
     var body: some View {
-        
+
             VStack (spacing: 10.0){
                 Text ("Reasons").bold()
                 ForEach(Reasons) { Reason in

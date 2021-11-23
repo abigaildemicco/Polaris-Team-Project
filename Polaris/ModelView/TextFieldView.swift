@@ -21,12 +21,12 @@
                  .foregroundColor(.red)
  //            .textFieldStyle(RoundedBorderTextFieldStyle())
              .padding()
-             .background(Color.gray.opacity(0.3).cornerRadius(10))
+             .background(Color.gray.opacity(0.15).cornerRadius(10))
              .font(.headline)
              .padding()
              TextField("Type your feelings...", text: $title)
                  .padding()
-                 .background(Color.gray.opacity(0.3).cornerRadius(10))
+                 .background(Color.gray.opacity(0.2).cornerRadius(10))
                  .font(.headline)
                  .padding()
          
@@ -62,6 +62,7 @@
              
      }
              .navigationTitle(Text("My Thoughts"))}
+         .padding(1.0)
  }
      func saveText (){
          dataArray.append(textFieldText)
