@@ -1,20 +1,20 @@
 //
-//  TodayPage.swift
+//  NotTodayView.swift
 //  Polaris
 //
-//  Created by Antonio Iacono on 16/11/21.
+//  Created by Antonio Iacono on 23/11/21.
 //
-//
+
 
 import SwiftUI
 
 
 
-struct TodayView: View {
+struct NotTodayView: View {
     
     @State private var hideStatusBar = false
-    @Binding var showModal: Bool
-    @State private var date = "25 November 2021"
+    @Binding var showModal2: Bool
+    @State private var date = "15 November 2021"
    
     
    // let timeFormatter = Calendar.current
@@ -35,7 +35,7 @@ struct TodayView: View {
         //ScrollView {
         NavigationView{
             ScrollView {
-                VStack{
+                VStack(spacing: 50.0){
                                   
                     EmojiSelectionView()
                     
@@ -44,7 +44,7 @@ struct TodayView: View {
                     ThoughtView()
     
                 }.navigationTitle(date)
-//                    .padding(.top,20)
+                    .padding(.top,80)
                     .statusBar(hidden: false)
                 
             }
@@ -59,12 +59,9 @@ struct TodayView: View {
 
 
 
-struct TodayView_Previews: PreviewProvider {
+struct NotTodayView_Previews: PreviewProvider {
     static var previews: some View {
         
-        TodayView(showModal: .constant(true))
+        NotTodayView(showModal2: .constant(true))
     }
 }
-
-
-

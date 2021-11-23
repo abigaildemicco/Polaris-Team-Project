@@ -17,8 +17,8 @@ struct ThoughtView: View {
     var body: some View {
         
         
-        VStack(spacing: 10){
-            Text(" SAVE YOUR FEELINGS!").font(.system(size: 24, weight: .heavy, design: .rounded)) .padding()
+        VStack{
+            Text(" Save your feelings!").font(.system(size: 24, weight: .heavy, design: .rounded)) .padding(.top,20)
                 
             List {
                 Button("Add Thought") {
@@ -66,10 +66,10 @@ struct ThoughtView: View {
                                         
                 }
             }
-        }   .frame(width: UIScreen.main.bounds.width - 32,height: 350)
+        }   .frame(width: UIScreen.main.bounds.width - 32,height: 260)
             .background(Color.gray.brightness(0.38))
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
-            .padding()
+           // .padding()
         }
         
     

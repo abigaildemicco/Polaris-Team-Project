@@ -25,7 +25,7 @@ struct ReasonSelectionView: View {
         //        .brightness(0.65)
         //        .frame(width: UIScreen.main.bounds.width - 32, height: 350)
         
-        VStack(spacing: 10){
+        VStack{
             Text("Why?").font(.system(size: 24, weight: .heavy, design: .rounded)).padding()
             
             HStack{
@@ -68,7 +68,7 @@ struct ReasonSelectionView: View {
         .frame(width: UIScreen.main.bounds.width - 32)
         .background(Color.gray.brightness(0.38))
         .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
-        .padding()
+        .padding(.bottom)
         
         
     }
