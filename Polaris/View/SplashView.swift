@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State var isActive:Bool = false
-    
+    @State var isActive: Bool = false
+    @State var scale: CGFloat = 4
     @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     //    @Binding var shouldShowOnboarding: Bool
     
@@ -22,6 +22,15 @@ struct SplashView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 50)
                         .padding()
+                        .scaleEffect(scale)
+                        .onAppear {
+                            let baseAnimation = Animation.easeInOut(duration: 1.25)
+                            let repeated = baseAnimation.repeatForever(autoreverses: true)
+
+                            withAnimation(repeated) {
+                                scale = 100
+                            }
+                        }
                     //                                 Image("loadLogo2")
                     //                                     .resizable()
                     //                                     .aspectRatio(contentMode: .fit)
