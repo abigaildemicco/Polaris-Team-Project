@@ -40,8 +40,9 @@ struct ReasonsView: View {
                 .background(Color.gray.brightness(0.38))
                 .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
                 .padding()
-               
+//                .frame(width: 50, height: 50, alignment: .center)
             }
+      
         .onAppear {
           guard lastWeekSurveys.count > 0 else { return }
           let total = lastWeekSurveys.count
