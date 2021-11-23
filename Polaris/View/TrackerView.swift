@@ -36,8 +36,9 @@ struct TrackerView: View {
                 showingSheet.toggle()
             }
             .sheet(isPresented: $showingSheet) {
+               
                 if #available(iOS 15, *) {
-//                    NotificationModalView()
+                    NotificationModalView()
                 } else {
                     // Fallback on earlier versions
                 }
@@ -46,7 +47,7 @@ struct TrackerView: View {
             }
         .onAppear {
 //            CoreDataController.shared.deleteSurveys(reason: "stress")
-           CoreDataController.shared.addDailySurvey(mood: "very good", reason: "Diet")
+//           CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Love")
          }
         } //navview
 
