@@ -4,10 +4,14 @@
 //
 //  Created by Abigail De Micco on 20/11/21.
 //
+// How to use:
+//     DELETE SOMETHING BY REASON     CoreDataController.shared.deleteSurveys(reason: "stress")
+//     ADD SOMETHING          CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Travel")
 
 import Foundation
 import CoreData
 import UIKit
+import simd
 
 class CoreDataController { //serve a comunicare con il database (è il postino)
     static let shared = CoreDataController() //shared perché è static cioè condivisa con tutto il progetto
@@ -19,6 +23,14 @@ class CoreDataController { //serve a comunicare con il database (è il postino)
     }
     
     func addDailySurvey(mood: String, reason: String) { //salva il sondaggio che stai facendo sul db
+        let correctMood = Emojis.contains { Emoji in
+            Emoji.description == mood
+        }
+        let correctReason = Reasons.contains { Reason in
+            Reason.name == reason
+        }
+        guard correctMood && correctReason else { print("Add failed for incorrect attribute's value"); return }
+        
         let day = Int64(Date().timeIntervalSince1970)
         
         let entity = NSEntityDescription.entity(forEntityName: "DailySurvey", in: self.context)
@@ -91,5 +103,39 @@ class CoreDataController { //serve a comunicare con il database (è il postino)
             print("Error: \n \(error)\n")
             return nil
         }
+    }
+    
+    func deleteSurveys(reason: String) {
+        let surveys = self.loadDailySurveysFromReason(reason: reason)
+        for survey in surveys {
+            self.context.delete(survey)
+        }
+        do {
+            try self.context.save()
+        } catch let errore {
+            print("[CDC] Problema eliminazione libro ")
+            print("  Stampo l'errore: \n \(errore) \n")
+        }
+    }
+    
+    func loadDailySurveysFromReason(reason: String) -> [DailySurvey] {
+        let request: NSFetchRequest<DailySurvey> = NSFetchRequest(entityName: "DailySurvey")
+        request.returnsObjectsAsFaults = false
+        
+        let predicate = NSPredicate(format: "reason = %@", reason)
+        request.predicate = predicate
+        
+        var dailySurveys = [DailySurvey]()
+            do {
+                dailySurveys = try self.context.fetch(request)
+                
+                guard dailySurveys.count > 0 else {print("[CDC] Non ci sono elementi da leggere "); return []}
+                
+            } catch let errore {
+                print("[CDC] Problema esecuzione FetchRequest")
+                print("  Stampo l'errore: \n \(errore) \n")
+            }
+            
+        return dailySurveys
     }
 }
