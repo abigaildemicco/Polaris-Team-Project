@@ -102,7 +102,7 @@ struct CustomDataPicker: View {
                        showModal.toggle()
                     }
                    .sheet(isPresented: $showModal, content: {
-                       ModalView(showModal: $showModal)
+                       TodayView(showModal: $showModal)
                    })
                     
                    // Text("\(value.day)")

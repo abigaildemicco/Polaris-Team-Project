@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct EmojiSelectionView: View {
+    
+    @State private var isScaled: Bool = false
+    
     var body: some View {
         
         
@@ -18,19 +21,69 @@ struct EmojiSelectionView: View {
             
             
             HStack{
-                ForEach(Emojis){ Emoji in
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text(Emoji.name).font(.system(size: Emoji.emojiSize))
-                    }
+                ForEach(Emojis) { emoji in
+                    
+//                    let index = Emojis.firstIndex(where: {$0.id == emoji.id})
+                    /*
+                     Button(action: { Emojis[index!].emojiSelected.toggle()} ) {
+                     Text(emoji.name).font(.system(size: emoji.emojiSize))
+                     .animation( .perform{startAnimation(Emojis[index!].emojiSelected)})
+                     }
+                     
+                     */
+                    
+                    EmojiButton(action: {
+                        print("Some")
+                    }, content:
+                        Text(emoji.name).font(.system(size: emoji.emojiSize))
+                    )
+                    
+                    
+//                    Button{
+//                        isScaled.toggle()
+//
+//                    } label:{
+//                        Text(emoji.name).font(.system(size: emoji.emojiSize))
+//                            .scaleEffect(isScaled ? 2 : 1)
+//
+//
+//                    } //.scaleEffect(emoji.scale)
+
+                    
                 }
-            }
-        } .frame(width: UIScreen.main.bounds.width - 32,height: 150)
-            .background(Color.gray.brightness(0.38))
-            .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
-            .padding()
+            } .frame(width: UIScreen.main.bounds.width - 32,height: 150)
+                .background(Color.gray.brightness(0.38))
+                .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                .padding()
+            
+        }
         
     }
+    
 }
+
+
+struct EmojiButton<Content: View>: View {
+    
+    var action: () -> Void
+    var content: Content
+    
+    @State var isScaled: Bool = false
+    
+    var body: some View{
+        
+        Button {
+            isScaled.toggle()
+            action()
+        } label: {
+            content
+                .scaleEffect(isScaled ? 1.5 : 1)
+        }
+
+    }
+    
+}
+
 
 struct EmojiSelectionView_Previews: PreviewProvider {
     static var previews: some View {
