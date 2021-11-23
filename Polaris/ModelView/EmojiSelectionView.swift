@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EmojiSelectionView: View {
+   
     var body: some View {
         
         
@@ -17,9 +18,11 @@ struct EmojiSelectionView: View {
             
             
             HStack{
-                ForEach(Emojis){ Emoji in
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text(Emoji.name).font(.system(size: Emoji.emojiSize))
+                ForEach(Emojis, id: \.id ) { emoji in
+             //   ForEach(0..<Emojis) { emoji in
+                    let index = Emojis.firstIndex(where: {$0.id == emoji.id})
+                    Button(action: { Emojis[index!].emojiSelected.toggle()} ) {
+                        Text(emoji.name).font(.system(size: emoji.emojiSize))
                     }
                 }
             }
@@ -27,8 +30,13 @@ struct EmojiSelectionView: View {
             .background(Color.gray.brightness(0.38))
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
             .padding()
-        
+        Button(action: { print(Emojis[0].emojiSelected)} ) {
+               Text("Prova")
+           }
     }
+    
+   
+    
 }
 
 struct EmojiSelectionView_Previews: PreviewProvider {
