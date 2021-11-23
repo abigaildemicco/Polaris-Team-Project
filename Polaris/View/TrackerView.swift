@@ -27,7 +27,8 @@ struct TrackerView: View {
             //                 .fill(Color.blue).ignoresSafeArea()
             //               }
             
-            VStack{MoodView(lastWeekSurveys: lastWeekDailySurveys)
+            VStack{
+                MoodView(lastWeekSurveys: lastWeekDailySurveys)
                 ReasonsView(lastWeekSurveys: lastWeekDailySurveys)
             }
             .navigationTitle(Text("Statistics"))
@@ -35,8 +36,9 @@ struct TrackerView: View {
                 showingSheet.toggle()
             }
             .sheet(isPresented: $showingSheet) {
+               
                 if #available(iOS 15, *) {
-//                    NotificationModalView()
+                    NotificationModalView()
                 } else {
                     // Fallback on earlier versions
                 }
@@ -45,7 +47,7 @@ struct TrackerView: View {
             }
         .onAppear {
 //            CoreDataController.shared.deleteSurveys(reason: "stress")
-//            CoreDataController.shared.addDailySurvey(mood: "ASPE", reason: "KEYHAN")
+//           CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Love")
          }
         } //navview
 
