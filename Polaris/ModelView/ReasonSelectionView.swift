@@ -31,6 +31,22 @@ struct ReasonSelectionView: View {
             HStack{
                 LazyVGrid(columns: items){
                     ForEach(Reasons){ Reason in
+                        
+                        
+                        EmojiButton(action: {
+                            print("Some")
+                        }, content:
+                                        Text(Reason.name)
+                                            .font(.system(size: 16, weight: .heavy, design: .rounded))
+                                            .foregroundColor(.white)
+                                            .font(.headline)
+                                            .frame(width:100 ,height: 50)
+                                            .background(Color.blue)
+                                            .cornerRadius(20)
+                        )
+                        
+                        
+                 /*
                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Text(Reason.name)
                                 .font(.system(size: 16, weight: .heavy, design: .rounded))
@@ -42,6 +58,7 @@ struct ReasonSelectionView: View {
                             
                             
                         }
+                  */
                     
                     }
                 }
@@ -61,4 +78,28 @@ struct ReasonSelectionView_Previews: PreviewProvider {
     static var previews: some View {
         ReasonSelectionView()
     }
+}
+
+
+
+
+struct ReasonButton<Content: View>: View {
+    
+    var action: () -> Void
+    var content: Content
+    
+    @State var isScaled: Bool = false
+    
+    var body: some View{
+        
+        Button {
+            isScaled.toggle()
+            action()
+        } label: {
+            content
+                .scaleEffect(isScaled ? 1.5 : 1)
+        }
+
+    }
+    
 }
