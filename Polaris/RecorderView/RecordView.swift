@@ -7,8 +7,7 @@
 
 //ContentView.swift
 
-//Created by BLCKBIRDS on 28.10.19.
-//Visit www.BLCKBIRDS.com for more.
+
 
 import SwiftUI
 
@@ -44,7 +43,9 @@ struct RecordView: View {
             }
                 .navigationBarTitle("Voice recorder")
                 .navigationBarItems(trailing: EditButton())
+                
         }
+        
     }
 }
 

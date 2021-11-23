@@ -44,13 +44,14 @@ struct NotificationModalView: View {
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 List {
-                    Text("Monday0")
-                    Text("Tuesday0")
-                    Text("Wednesday0")
-                    Text("Thursday0")
-                    Text("Friday0")
-                    Text("Saturday0")
-                    Text("Sunday0")
+                    Text("Monday")
+                    Image(systemName: "checkmark")
+                    Text("Tuesday")
+                    Text("Wednesday")
+                    Text("Thursday")
+                    Text("Friday")
+                    Text("Saturday")
+                    Text("Sunday")
                 }
                 
                 // Creating a selectable list of days with checkmarks
@@ -73,76 +74,77 @@ struct NotificationModalView: View {
                 //            .padding()
                 //            .background(Color.black)
                 
-            }
-            
-            
-            // This button should be moved to the to right of the Modal integrated with the "Done" button
-            //        VStack {
-            //            Button("Schedule Notification") {
-            //                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-            //                    if success {
-            //                        print("All set!")
-            //                        let content = UNMutableNotificationContent()
-            //                        content.title = "Polaris app "
-            //    //                    content.subtitle = "How do you feel ? 🌟"
-            //                        content.body = "Time a minute to reflect about how you feel right now 🌟"
-            //                        content.sound = UNNotificationSound.default
-            //
-            //                        // show this notification on the lock screen a few seconds from now so CMD + L quick to lock the screen
-            //                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-            //
-            //                        // choose a random identifier
-            //                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-            //
-            //                        // add our notification request to ask to the user his consent
-            //                        UNUserNotificationCenter.current().add(request)
-            //
-            //                    } else if let error = error {
-            //                        print(error.localizedDescription)
-            //                    }
-            //                }
-            //                // second
-            //            }
-            //
-            //        }
-            
-            LargeButton(title: "Schedule your notification",
-                        backgroundColor: Color.white,
-                        foregroundColor: Color.blue) {
-                //                                        print("Hello World")
-                dismiss()
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-                    if success {
-                        print("All set!")
-                        let content = UNMutableNotificationContent()
-                        content.title = "Polaris app "
-                        //                    content.subtitle = "How do you feel ? 🌟"
-                        content.body = "Time a minute to reflect about how you feel right now 🌟"
-                        content.sound = UNNotificationSound.default
-                        
-                        // show this notification five seconds from now
-                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
-                        
-                        // choose a random identifier
-                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                        
-                        // add our notification request
-                        UNUserNotificationCenter.current().add(request)
-                        
-                    } else if let error = error {
-                        print(error.localizedDescription)
+                
+                
+                
+                // This button should be moved to the to right of the Modal integrated with the "Done" button
+                //        VStack {
+                //            Button("Schedule Notification") {
+                //                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                //                    if success {
+                //                        print("All set!")
+                //                        let content = UNMutableNotificationContent()
+                //                        content.title = "Polaris app "
+                //    //                    content.subtitle = "How do you feel ? 🌟"
+                //                        content.body = "Time a minute to reflect about how you feel right now 🌟"
+                //                        content.sound = UNNotificationSound.default
+                //
+                //                        // show this notification on the lock screen a few seconds from now so CMD + L quick to lock the screen
+                //                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+                //
+                //                        // choose a random identifier
+                //                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                //
+                //                        // add our notification request to ask to the user his consent
+                //                        UNUserNotificationCenter.current().add(request)
+                //
+                //                    } else if let error = error {
+                //                        print(error.localizedDescription)
+                //                    }
+                //                }
+                //                // second
+                //            }
+                //
+                //        }
+                
+                LargeButton(title: "Schedule your notification",
+                            backgroundColor: Color.white,
+                            foregroundColor: Color.blue) {
+                    //                                        print("Hello World")
+                    dismiss()
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                        if success {
+                            print("All set!")
+                            let content = UNMutableNotificationContent()
+                            content.title = "Polaris app "
+                            //                    content.subtitle = "How do you feel ? 🌟"
+                            content.body = "Time a minute to reflect about how you feel right now 🌟"
+                            content.sound = UNNotificationSound.default
+                            
+                            // show this notification five seconds from now
+                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+                            
+                            // choose a random identifier
+                            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                            
+                            // add our notification request
+                            UNUserNotificationCenter.current().add(request)
+                            
+                        } else if let error = error {
+                            print(error.localizedDescription)
+                        }
                     }
+                    // second
                 }
-                // second
             }
+            .navigationBarTitle("Notification")
+            //            COME OOOOOOON I just want to put a button to close the modal
+            //            .navigationBarItems(trailing: Button {
+            //                Text("Cancel")
+            //            }
+            //            )
+            
         }
-        .navigationBarTitle("Notification")
-        //            COME OOOOOOON I just want to put a button to close the modal
-        //            .navigationBarItems(trailing: Button {
-        //                Text("Cancel")
-        //            }
-        //            )
-        
     }
 }
 

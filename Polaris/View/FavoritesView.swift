@@ -15,7 +15,7 @@ struct FavoritesView: View {
    
     
     @State var myRecordings = [
-        "Maronn", "Dio", "Ciao", "Gesù", "Gesuel", "Paskd"
+        "Rec1", "Rec2", "Rec3"
     ]
     
 
@@ -35,9 +35,9 @@ struct FavoritesView: View {
                         
                     myRecordings.remove(atOffsets: IndexSet)
                     })
-                    .onMove(perform: { indices, newOffset in myRecordings.move(fromOffsets: indices, toOffset: newOffset)
+//                    .onMove(perform: { indices, newOffset in myRecordings.move(fromOffsets: indices, toOffset: newOffset)
                    
-                    })
+//                    })
                   
                 }
 //                .padding()
