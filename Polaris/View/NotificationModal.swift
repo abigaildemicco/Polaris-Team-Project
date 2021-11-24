@@ -44,14 +44,13 @@ struct NotificationModalView: View {
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 List {
-                    Text("Monday")
-                    Image(systemName: "checkmark")
-                    Text("Tuesday")
+                    Text("Monday                                                    \(Image(systemName: "checkmark"))")
+                    Text("Tuesday                                                   \(Image(systemName: "checkmark"))")
                     Text("Wednesday")
-                    Text("Thursday")
-                    Text("Friday")
+                    Text("Thursday                                                 \(Image(systemName: "checkmark"))")
+                    Text("Friday                                                      \(Image(systemName: "checkmark"))")
                     Text("Saturday")
-                    Text("Sunday")
+                    Text("Sunday                                                    \(Image(systemName: "checkmark"))")
                 }
                 
                 // Creating a selectable list of days with checkmarks
@@ -116,7 +115,7 @@ struct NotificationModalView: View {
                         if success {
                             print("All set!")
                             let content = UNMutableNotificationContent()
-                            content.title = "Polaris app "
+                            content.title = "MooRe"
                             //                    content.subtitle = "How do you feel ? 🌟"
                             content.body = "Time a minute to reflect about how you feel right now 🌟"
                             content.sound = UNNotificationSound.default

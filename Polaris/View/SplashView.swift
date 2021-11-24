@@ -8,20 +8,31 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State var isActive:Bool = false
-    
+    @State var isActive: Bool = false
+    @State var scale: CGFloat = 0
     @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     //    @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
         VStack {
             if !self.isActive {
-                VStack {
+                ZStack {
+                    Text("Take a deep breath")
+                    Spacer()
                     Image("loadLogo1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 50)
                         .padding()
+                        .scaleEffect(scale)
+                        .onAppear {
+                            let baseAnimation = Animation.easeInOut(duration: 1.25)
+                            let repeated = baseAnimation.repeatForever(autoreverses: true)
+
+                            withAnimation(repeated) {
+                                scale = 100
+                            }
+                        }
                     //                                 Image("loadLogo2")
                     //                                     .resizable()
                     //                                     .aspectRatio(contentMode: .fit)
