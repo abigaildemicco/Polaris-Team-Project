@@ -23,5 +23,5 @@ struct Thought : Identifiable {
     
 }
 
-var today = Thought (name: "Today",note: "Today I feel really good. I am coding with Swift !",rec: false)
-var yesterday = Thought (name: "Yesterday", note: "Yesterday I felt bad, I ate too much!",rec: false)
+var today = Thought (name: "Thought about the exam",note: "Today I feel really good. I am coding with Swift !",rec: false)
+var yesterday = Thought (name: "Some reflection", note: "Yesterday I felt bad, I ate too much!",rec: false)
