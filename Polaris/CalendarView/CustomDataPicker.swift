@@ -18,6 +18,7 @@ struct CustomDataPicker: View {
     @Binding var currentDate : Date
     @State var currentMonth: Int = 0
     @State private var showModal = false
+    @State private var showModal2 = false
 
     var body: some View {
 //       NavigationView {
@@ -96,7 +97,7 @@ struct CustomDataPicker: View {
             if value.day != -1 {
                 if let task = tasks.first(where: {
                     task in
-                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                    return isSameDay(date1: task.taskDate, date2: value.date)
                 }){
                     Button("\(value.day)") {
                        showModal.toggle()
@@ -114,10 +115,10 @@ struct CustomDataPicker: View {
                 }
                 else{
                     Button("\(value.day)") {
-                       showModal.toggle()
+                       showModal2.toggle()
                     }.foregroundColor(.black)
-                   .sheet(isPresented: $showModal, content: {
-                       TodayView(showModal: $showModal)
+                   .sheet(isPresented: $showModal2, content: {
+                       NotTodayView(showModal2: $showModal2)
                    })
                     Spacer()
                 }

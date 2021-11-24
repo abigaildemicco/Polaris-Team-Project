@@ -51,6 +51,7 @@
 		F7C03FD627481B86008078C8 /* CustomDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD527481B86008078C8 /* CustomDataPicker.swift */; };
 		F7C03FD827481BA4008078C8 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C03FD727481BA4008078C8 /* ModalView.swift */; };
 		F7F04BB32743C49900C99E7C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04BB22743C49900C99E7C /* TodayView.swift */; };
+		F7FD52C7274D4B0B006DD03B /* NotTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FD52C6274D4B0B006DD03B /* NotTodayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		F7C03FD527481B86008078C8 /* CustomDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataPicker.swift; sourceTree = "<group>"; };
 		F7C03FD727481BA4008078C8 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F7F04BB22743C49900C99E7C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		F7FD52C6274D4B0B006DD03B /* NotTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotTodayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 				518A1453274270B6009D1850 /* TrackerView.swift */,
 				EFEA266E274B97740054D46F /* LargeButtonStyle.swift */,
 				F7F04BB22743C49900C99E7C /* TodayView.swift */,
+				F7FD52C6274D4B0B006DD03B /* NotTodayView.swift */,
 				EFA2ED0B27465F400031583F /* NotificationModal.swift */,
 				40DBDE112745244C00BE2938 /* FavoritesView.swift */,
 				EFA2ED0727465E1B0031583F /* HelpView.swift */,
@@ -442,6 +445,7 @@
 			files = (
 				F78B020D274B999D00C30B85 /* RecordView.swift in Sources */,
 				518A1454274270B6009D1850 /* TrackerView.swift in Sources */,
+				F7FD52C7274D4B0B006DD03B /* NotTodayView.swift in Sources */,
 				F7C03FD427481B65008078C8 /* CalendarView.swift in Sources */,
 				5111C3ED2747A112006B0B55 /* ReasonsView.swift in Sources */,
 				512447C2274AE71C003DF3BB /* CoreDataController.swift in Sources */,
