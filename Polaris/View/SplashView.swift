@@ -16,17 +16,17 @@ struct SplashView: View {
     var body: some View {
         VStack {
             if !self.isActive {
-                ZStack {
-                    Text("Take a deep breath")
-                    Spacer()
+//                ZStack {
+//                    Text("Take a deep breath")
+//                    Spacer()
                     Image("Icon")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 50)
+                        .frame(width: 200, height: 200)
                         .padding()
                         .scaleEffect(scale)
                         .onAppear {
-                            let baseAnimation = Animation.easeInOut(duration: 1.25)
+                            let baseAnimation = Animation.easeInOut(duration: 2)
                             let repeated = baseAnimation.repeatForever(autoreverses: true)
 
                             withAnimation(repeated) {
@@ -37,7 +37,7 @@ struct SplashView: View {
                     //                                     .resizable()
                     //                                     .aspectRatio(contentMode: .fit)
                     //                                     .frame(width: 200, height: 50)
-                }
+//                }
             } else {
                 ContentView()
             }
@@ -46,7 +46,7 @@ struct SplashView: View {
         }
         
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 withAnimation {
                     self.isActive = true
                 }

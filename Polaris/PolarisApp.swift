@@ -14,9 +14,10 @@ struct PolarisApp: App {
     
     var body: some Scene {
         WindowGroup {
-                      ContentView()
+                      SplashView()
                 .environment(\.managedObjectContext, PolarisApp.persistentContainer.viewContext)
            // ThoughtView()
+   
         }
         .onChange(of: scenePhase) { phase in //quandi cambi pagina salva il contesto
             switch phase {
