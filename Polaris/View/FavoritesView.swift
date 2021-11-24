@@ -15,7 +15,7 @@ struct FavoritesView: View {
    
     
     @State var myRecordings = [
-        "Rec1", "Rec2", "Rec3"
+        "23-11-21_at_16:35:15.m4a", "24-11-21_at_10:15:05.m4a", "25-11-21_at_09:45:15.m4a"
     ]
     
 
@@ -49,7 +49,7 @@ struct FavoritesView: View {
                 
 
                .listStyle(GroupedListStyle())
-              .navigationTitle(searching ? "Searching" : "My Feelings")
+              .navigationTitle(searching ? "Searching" : "My Recordings")
              .toolbar {
 //                ToolbarItem(placement: .navigationBarTrailing){ Image(systemName: "plus")
 //              .foregroundColor(.red)

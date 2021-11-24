@@ -10,9 +10,9 @@ import SwiftUI
 struct TextFieldView: View {
     @State var textFieldText: String = ""
     @State var dataArray: [String] = []
-    @State var title : String = ""
-    @State var dataArray2: [String] = []
-    
+//    @State var title : String = ""
+//    @State var dataArray2: [String] = []
+//
     
     var body: some View {
         NavigationView{
@@ -23,12 +23,12 @@ struct TextFieldView: View {
                     .padding()
                     .background(Color.gray.opacity(0.15).cornerRadius(10))
                     .font(.headline)
-                    .padding()
-                TextField("Type your feelings...", text: $title)
-                    .padding()
-                    .background(Color.gray.opacity(0.2).cornerRadius(10))
-                    .font(.headline)
-                    .padding()
+//                    .padding()
+//                TextField("Type your feelings...", text: $title)
+//                    .padding()
+//                    .background(Color.gray.opacity(0.2).cornerRadius(10))
+//                    .font(.headline)
+//                    .padding()
                 
                 Button(action: {
                     saveText()
@@ -50,10 +50,12 @@ struct TextFieldView: View {
                     }
                     
                     
-                    ForEach(dataArray2, id: \.self){ name in
-                        Text(name)
-                        //                    .foregroundColor(.red)
-                    }
+//                    ForEach(dataArray2, id: \.self){ name in
+//                        Text(name)
+//                        //                    .foregroundColor(.red)
+//                    }
+//
+                    
                 }
                 //            .padding(.leading)
                 .frame(width: UIScreen.main.bounds.width - 32,height: 150,alignment:.leading)
@@ -62,11 +64,11 @@ struct TextFieldView: View {
                 
             }
             .navigationTitle(Text("My Thoughts"))}
-        .padding(1.0)
+       
     }
     func saveText (){
         dataArray.append(textFieldText)
-        dataArray2.append(title)
+//        dataArray2.append(title)
     }
 }
 
