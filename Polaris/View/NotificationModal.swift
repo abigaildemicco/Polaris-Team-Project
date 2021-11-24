@@ -44,14 +44,13 @@ struct NotificationModalView: View {
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 List {
-                    Text("Monday")
-                    Image(systemName: "checkmark")
-                    Text("Tuesday")
+                    Text("Monday                                                    \(Image(systemName: "checkmark"))")
+                    Text("Tuesday                                                   \(Image(systemName: "checkmark"))")
                     Text("Wednesday")
-                    Text("Thursday")
-                    Text("Friday")
+                    Text("Thursday                                                 \(Image(systemName: "checkmark"))")
+                    Text("Friday                                                      \(Image(systemName: "checkmark"))")
                     Text("Saturday")
-                    Text("Sunday")
+                    Text("Sunday                                                    \(Image(systemName: "checkmark"))")
                 }
                 
                 // Creating a selectable list of days with checkmarks

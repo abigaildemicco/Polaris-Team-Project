@@ -9,14 +9,16 @@ import SwiftUI
 
 struct SplashView: View {
     @State var isActive: Bool = false
-    @State var scale: CGFloat = 4
+    @State var scale: CGFloat = 0
     @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     //    @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
         VStack {
             if !self.isActive {
-                VStack {
+                ZStack {
+                    Text("Take a deep breath")
+                    Spacer()
                     Image("loadLogo1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
