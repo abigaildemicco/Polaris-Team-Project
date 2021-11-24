@@ -117,7 +117,7 @@ struct NotificationModalView: View {
                             let content = UNMutableNotificationContent()
                             content.title = "MooRe"
                             //                    content.subtitle = "How do you feel ? 🌟"
-                            content.body = "Time a minute to reflect about how you feel right now 🌟"
+                            content.body = "Take a minute to reflect about how you feel right now 🌟"
                             content.sound = UNNotificationSound.default
                             
                             // show this notification five seconds from now
