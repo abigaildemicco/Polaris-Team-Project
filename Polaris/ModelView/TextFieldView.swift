@@ -18,7 +18,7 @@ struct TextFieldView: View {
         NavigationView{
             VStack{
                 TextField("Type a name...", text: $textFieldText)
-                    .foregroundColor(.red)
+                    .foregroundColor(.black)
                 //            .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     .background(Color.gray.opacity(0.15).cornerRadius(10))
@@ -46,7 +46,7 @@ struct TextFieldView: View {
                         
                         Text(data)
                         
-                            .foregroundColor(.red)
+                            .foregroundColor(.black)
                     }
                     
                     

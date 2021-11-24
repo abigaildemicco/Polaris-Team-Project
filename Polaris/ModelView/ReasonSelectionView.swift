@@ -97,7 +97,9 @@ struct ReasonButton<Content: View>: View {
             action()
         } label: {
             content
-                .scaleEffect(isScaled ? 1.5 : 1)
+               .scaleEffect(isScaled ? 2 : 1)
+            
+           // .background(isScaled ? Color.green : Color.blue)
         }
 
     }
