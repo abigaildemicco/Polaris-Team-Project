@@ -121,7 +121,7 @@ struct NotificationModalView: View {
                             content.sound = UNNotificationSound.default
                             
                             // show this notification five seconds from now
-                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
                             
                             // choose a random identifier
                             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)

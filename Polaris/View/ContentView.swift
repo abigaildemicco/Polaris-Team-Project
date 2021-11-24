@@ -46,16 +46,16 @@ struct ContentView: View {
                 //            .accentColor(.red)
             }
             .onAppear {
-//                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Diet")
-//                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Diet")
-//                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Love")
-//                CoreDataController.shared.addDailySurvey(mood: "very good", reason: "University")
-//                CoreDataController.shared.addDailySurvey(mood: "good", reason: "Stress")
-//                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Friends")
-//                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Friends")
-//                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Diet")
-//                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Stress")
-//                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Stress")
+                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Diet")
+                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Diet")
+                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Love")
+                CoreDataController.shared.addDailySurvey(mood: "very good", reason: "University")
+                CoreDataController.shared.addDailySurvey(mood: "good", reason: "Stress")
+                CoreDataController.shared.addDailySurvey(mood: "bad", reason: "Friends")
+                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Friends")
+                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Diet")
+                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Stress")
+                CoreDataController.shared.addDailySurvey(mood: "very bad", reason: "Stress")
 
             }
             //        .fullScreenCover(isPresented: $shouldShowOnboarding, content: { Onboarding(shouldShowOnboarding: $shouldShowOnboarding)}
