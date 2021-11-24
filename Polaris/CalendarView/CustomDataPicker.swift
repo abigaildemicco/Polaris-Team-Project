@@ -101,7 +101,7 @@ struct CustomDataPicker: View {
                 }){
                     Button("\(value.day)") {
                        showModal.toggle()
-                    }
+                    }.foregroundColor(.black)
                    .sheet(isPresented: $showModal, content: {
                        TodayView(showModal: $showModal)
                    })
