@@ -19,7 +19,7 @@ struct SplashView: View {
                 ZStack {
                     Text("Take a deep breath")
                     Spacer()
-                    Image("loadLogo1")
+                    Image("Icon")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 50)
